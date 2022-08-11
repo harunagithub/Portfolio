@@ -1,0 +1,127 @@
+// .developer__abouts{
+    
+// }
+.developer__info-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 130px;   
+    flex-direction: column-reverse; 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+
+    }
+    }
+
+    .developer__inner-img {
+        position: absolute;
+        left: auto;
+        max-width: 356px;
+        right: 0;
+        top: 0;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    .developer__img {
+        border-radius: 100%;
+        // width: 240px;
+        // height: 240px;
+        @media screen and(min-width:768px) {
+            
+        }
+    }
+
+    h5.developer__text-caption {
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::before{
+            position: absolute;
+            bottom: -5px;
+            content: "";
+            height: 2px;
+            background-color: $secondaryColor;
+            width: 44px;
+        }
+       
+    } 
+            .developer__col-1-inner {
+                position: relative;
+                top: 46px;
+            }
+            .developer__name-title{
+                font-size: 45px;
+                font-weight: bold;
+                line-height: 1.1;
+                font-family: $fontFamliy2;
+            }
+            .developer__occu_title {
+                color: $secondaryColor;
+                font-weight: bold;
+                margin-bottom: -23px;
+                font-size: 23px;
+            }
+            .developer__about-description {
+                // display: flex;
+                gap: 198px;
+            }
+            .task__skills-wrapper {
+                display: flex;
+                gap: 42px;
+            }
+            .developer__col-left {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        h2.developer__whatIdo-title {
+            margin: 0;
+            font-size: 35px;
+            padding: 0 0 12px;
+            font-family: $fontFamliy2;
+            font-weight: bold;
+            text-align: center;
+        }
+        .developer__description__text-black{
+            font-size: 16px;
+            font-family: $fontFamliy;
+            width: 100%;
+            color: $secondaryColor;
+        }
+        li.developer__email-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .developer__email-item  span i {
+            color: $primaryColor;
+        }
+        .developer__call-link  span i {
+            color: $primaryColor;
+        }
+        .developer__email-link{
+            font-size: 20px;
+            font-family: $fontFamliy;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .developer__call-link{
+            font-size: 20px;
+            font-family: $fontFamliy;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        // .developer__about__skills-right {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
+        .developer__about__skills-right{
+            text-align: center;
+        }
+        
+
+

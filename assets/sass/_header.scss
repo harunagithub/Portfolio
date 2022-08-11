@@ -1,0 +1,43 @@
+.header {
+    padding-top: 10px;
+    margin-bottom: 57px;
+    
+    @media screen and (min-width: 768px) {
+        min-height: 40px;
+        padding-top: 0;
+    }
+
+    .header__logo {
+    @media screen and (min-width: 768px) {
+        margin-top: 15px;
+    }
+        a { 
+        text-decoration: none;
+        font-size: 30px;
+        font-family: $fontFamliy;
+        font-weight: bold;
+        color: $primaryColor;
+        display: block;
+    }}
+    .header__logo span{
+        font-size: 23px;
+    }
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        .m-icon{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .header__mobile{
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+   
+}

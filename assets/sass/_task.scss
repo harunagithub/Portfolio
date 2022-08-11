@@ -1,0 +1,62 @@
+.task__wrapper {
+    text-align: center;
+    .developer__about__skills-right{
+        display: block;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        .developer__task-1 .developere__task-2 .developer__task-3 {
+            padding: 20px;
+        }
+        .developer__task-inner-left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 139px;
+            width: 100%;
+        }
+        }
+        .developer__icon{
+            color: $primaryColor;
+        }
+        .developer__task-title-left{
+            font-family: $fontFamliy;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+        .developer__task-caption-left{
+            color: $secondaryColor;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $fontFamliy
+        }
+        
+        .developer__task {
+            display: inline-block;
+            position: relative;
+            // margin-bottom: 25px;
+            padding:30px 0;
+    
+            &::before{
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                content: "";
+                height: 1px;
+                background-color: #08408812;
+                width: 100%;
+            }
+           
+        } 
+        
+    }
+    .developer__box-icon-arrow{
+        color: $secondaryColor;
+    }
+  
+    

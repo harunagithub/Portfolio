@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+@import '_variable.scss';
+@import '_reset.scss';
+@import '_header.scss';
+@import '_nav.scss';
+@import '_developer.scss';
+@import '_task.scss';
+@import '_project.scss';
+@import '_skillandexp.scss';
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu__icon{
+    width: 30px;
+    height: 30px;
+}

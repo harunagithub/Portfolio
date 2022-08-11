@@ -1,0 +1,36 @@
+.nav{
+   
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    .nav__list{
+        display: flex;
+        gap: 40px;
+        .nav__item{
+            
+            .nav__link{
+                text-decoration: none;
+                font-family: $fontFamliy;
+                font-size: 17px;
+                line-height: 70px;
+                border-top: 3px solid transparent;
+                font-weight: $regular;
+                text-transform: uppercase;
+                display: block;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $primaryColor;
+                    border-top-color: $primaryColor;
+                }
+
+                &.current-page {
+                    color: $primaryColor;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,26 @@
+h1.skillsexps__title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 111px;
+}
+
+h3.skills-one {
+    padding: 0 10px 26px;
+}
+.skills-column {
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    // margin-bottom: 25px;
+
+    &::before{
+        position: absolute;
+        // bottom: -5px;
+        content: "";
+        height: 2px;
+        background-color: $secondaryColor;
+        width: 100%;
+    }
+   
+} 
+  
