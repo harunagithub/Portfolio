@@ -258,13 +258,12 @@ h5.developer__text-caption::before {
   width: 100%;
 }
 
-h2.developer__whatIdo-title {
+.developer__whatIdo__todo-title {
   margin: 0;
   font-size: 35px;
   padding: 0 0 12px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
-  text-align: center;
 }
 
 .developer__description__text-black {
@@ -308,6 +307,26 @@ li.developer__email-item {
 
 .developer__about__skills-right {
   text-align: center;
+}
+
+.developer__task {
+  border-bottom: 1px solid #08408812;
+}
+
+@media screen and (min-width: 768px) {
+  .developer__task {
+    border-right: 1px solid #08408812;
+    border-bottom: 0;
+    padding: 0 25px;
+  }
+}
+
+.tasks {
+  background-color: #f6f8fa;
+}
+
+.tasks .developer__task-inner-left {
+  padding: 35px 0;
 }
 
 .task__wrapper {
@@ -359,32 +378,29 @@ li.developer__email-item {
   font-size: 18px;
 }
 
-.task__wrapper .developer__task-caption-left {
+.developer__todo-description {
   color: #758398;
   font-size: 16px;
   font-weight: 400;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.task__wrapper .developer__task {
-  display: inline-block;
-  position: relative;
-  padding: 30px 0;
-}
-
-.task__wrapper .developer__task::before {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  content: "";
-  height: 1px;
-  background-color: #08408812;
-  width: 100%;
-}
-
 .developer__box-icon-arrow {
   color: #758398;
+}
+
+@media screen and (min-width: 768px) {
+  .developer__todo-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .projects {
@@ -424,13 +440,13 @@ li.developer__email-item {
   }
 }
 
-h1.skillsexps__title {
+.skills__title {
   font-size: 35px;
   font-weight: 800;
   line-height: 111px;
 }
 
-h3.skills-one {
+.skills-one {
   padding: 0 10px 26px;
 }
 
@@ -440,11 +456,19 @@ h3.skills-one {
   position: relative;
 }
 
-.skills-column::before {
+.skills-one {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.skills-one::before {
   position: absolute;
+  bottom: 10px;
   content: "";
-  height: 2px;
-  background-color: #758398;
+  height: 1px;
+  background-color: #08408812;
   width: 100%;
 }
 

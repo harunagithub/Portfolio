@@ -1,3 +1,10 @@
+.tasks {
+    background-color: #f6f8fa;
+
+    .developer__task-inner-left {
+        padding: 35px 0;
+    }
+}
 .task__wrapper {
     text-align: center;
     .developer__about__skills-right{
@@ -28,35 +35,24 @@
             font-size: 18px;
 
         }
-        .developer__task-caption-left{
-            color: $secondaryColor;
-            font-size: 16px;
-            font-weight: 400;
-            font-family: $fontFamliy
-        }
-        
-        .developer__task {
-            display: inline-block;
-            position: relative;
-            // margin-bottom: 25px;
-            padding:30px 0;
-    
-            &::before{
-                position: absolute;
-                bottom: 10px;
-                left: 0;
-                right: 0;
-                content: "";
-                height: 1px;
-                background-color: #08408812;
-                width: 100%;
-            }
-           
-        } 
-        
+    }
+    .developer__todo-description{
+        color: $secondaryColor;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $fontFamliy
     }
     .developer__box-icon-arrow{
         color: $secondaryColor;
+    }
+
+    .developer__todo-right {
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
   
     
