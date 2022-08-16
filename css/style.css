@@ -450,6 +450,37 @@ ul {
   background-color: #f6f8fa;
 }
 
+.projects .project__title {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 111px;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .projects .project__title {
+    font-size: 43px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .projects .project__title {
+    font-size: 50px;
+  }
+}
+
+.projects .developer__icon-arrow {
+  color: #009BDF;
+  width: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .projects .developer__icon-arrow {
+    width: 12%;
+  }
+}
+
 .projects .portfolio__boxes {
   display: -ms-grid;
   display: grid;
@@ -466,11 +497,13 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.projects .project__boxes .project__box {
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
