@@ -1,6 +1,3 @@
-// .developer__abouts{
-    
-// }
 .developer__info-inner {
     display: flex;
     align-items: center;
@@ -22,17 +19,22 @@
         top: 0;
         opacity: 0.5;
         z-index: -1;
+
     }
     
     .developer__img {
         border-radius: 100%;
+        width: 500px;
+        height: 500px;
         
-        @media screen and(min-width:768px) {
-            
+        @media screen and (max-width: 768px) {
+           width: 100%;
+           max-height: 250px;
+           max-width: 250px;
         }
     }
 
-    h5.developer__text-caption {
+    .developer__text-caption {
         display: inline-block;
         text-transform: uppercase;
         position: relative;
@@ -57,12 +59,17 @@
                 font-weight: bold;
                 line-height: 1.1;
                 font-family: $fontFamliy2;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 60px;
+                 }
             }
             .developer__occu_title {
                 color: $secondaryColor;
                 font-weight: bold;
                 margin-bottom: -23px;
-                font-size: 23px;
+                font-size: 35px;
+                font-family: $fontFamliy2;
             }
             .developer__about-description {
                 // display: flex;
@@ -76,24 +83,7 @@
                 margin-bottom: 20px;
                 width: 100%;
             }
-            .developer__whatIdo__todo-title {
-            margin: 0;
-            font-size: 35px;
-            padding: 0 0 12px;
-            font-family: $fontFamliy2;
-            font-weight: bold;
-            
-            // @media screen and (min-width: 768px) {
-                
-            // }
-        }
-        .developer__description__text-black{
-            font-size: 16px;
-            font-family: $fontFamliy;
-            width: 100%;
-            color: $secondaryColor;
-        }
-        li.developer__email-item {
+        .developer__email-item {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -116,27 +106,10 @@
             text-decoration: none;
             text-transform: uppercase;
         }
-        // .developer__about__skills-right {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        // }
-        .developer__about__skills-right{
-            text-align: center;
-        }
-
-        .developer__task {
-           border-bottom: 1px solid #08408812;
-
-           @media screen and (min-width: 768px) {
-            border-right: 1px solid #08408812;
-            border-bottom: 0;
-            padding: 0 25px;
-           }
-    
-            
-           
-        } 
         
 
+
+        
+        
+        
 

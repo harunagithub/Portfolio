@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/assets/sass/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- header-->
@@ -30,13 +30,16 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">Project</a>
                         </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Resume</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <!-- img inner -->
         <div class="inner__img">
-        <img class="developer__inner-img" src="/assets/images/developer-inner-img.png" alt="">
+        <img class="developer__inner-img" src="/images/developer-inner-img.png" alt="">
         </div>
     </header>
     
@@ -47,7 +50,7 @@
                 <div class="developer__col-left">
                     <h5 class="developer__text-caption">Hello, I am nobody</h5>
                     <h1 class="developer__name-title">Haruna Bah</h1>
-                    <h4 class="developer__occu_title">Developer</h4>
+                    <h4 class="developer__occu_title">Web Developer</h4>
                     <div class="developer__col-1-inner">
                         <ul class="developer__list">
                             <li class="developer__email-item">
@@ -66,12 +69,12 @@
                     </div>
                 </div>
                 <!-- <div class="developer__col-right"> -->
-                    <img class="developer__img" src="/assets/images/developer-image.jpg" width="300px" height="300px" alt="">
+                    <img class="developer__img" src="/images/developer-image.jpg" alt="">
                 <!-- </div> -->
             </div>
         </div>
     </section>
-    <section class="tasks">
+    <section class="todo">
         <div class="container">
            <div class="developer__task-todo-wrapper">
             <div class="developer__task-todo">
@@ -83,8 +86,8 @@
                         From understanding your requirements, designing a blueprint and delivering the 
                         final product, I do everything that falls in between these lines. 
                     </p>
-                    <div class="developer__about__skills-left">
-                    <svg class="developer__box-icon-arrow" width="70px" height="70px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    <div class="developer__todo-box-icon">
+                    <svg class="developer__icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </div>
                 </div>
             </div>
@@ -92,11 +95,10 @@
             <div class="task__wrapper">
                 <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" width="30px" height="30px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
-                        <i class='fas fa-pencil-alt' style='font-size:24px'></i>
+                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                         <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                     </div>
-                    <p class="developer__task-caption-left">
+                    <p class="developer__task-caption">
                         An effective UI/UX is what captures attention and spreads a clear message. 
                         I make sure the design is innovative and neat with all of this.
                     </p>
@@ -104,11 +106,11 @@
                 <!-- task-2 -->
                 <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" width="30px" height="30px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         <i class='fas fa-laptop-code'></i>
                         <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                     </div>
-                    <p class="developer__task-caption-left">
+                    <p class="developer__task-caption">
                         If you are looking for a developer who will take over the research and development of your 
                         website, I am a well-established professional to help you with this.
                     </p>
@@ -116,10 +118,10 @@
                 <!-- task-3 -->
                 <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" width="30px" height="30px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
+                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
                         <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                     </div>
-                    <p class="developer__task-caption-left">
+                    <p class="developer__task-caption">
                         If you are looking for a user-friendly app that will attract more mobile users, I can help 
                         you design and build a platform with the latest and trendiest look and feel.
                     </p>
@@ -129,54 +131,65 @@
         </div>
     </section>
 
+    <!-- parallax section -->
+    <!-- parallax section -->
     <!-- skills -->
-    <section class="skills">
+    <!-- <section class="skills">
         <div class="container">
-            <div class="skill__content">
-                <div class="skills__wrapper">
-                    <h1 class="skillsexps__title">Skills</h3>
-                </div>
+            <div class="skill__wrapper">
+                <h1 class="skills__title">Skills</h3>
                 <div class="skills-column">
-                    <h3 class="skills-one">HTML</h3>
-                    <h3 class="skills-one">CSS</h3>
-                    <h3 class="skills-one">WORDPRESS</h3>
-                    <h3 class="skills-one">TAILWINDCSS</h3>
-                    <h3 class="skills-one">FIGMA</h3>
+                    <h3 class="skills-one">Html</h3>
+                    <h3 class="skills-one">Css</h3>
+                    <h3 class="skills-one">Wordpress</h3>
+                    <h3 class="skills-one">Tailwindcss</h3>
+                    <h3 class="skills-one">Figma</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- skills -->
     <!-- experience -->
     <section class="experiences">
         <div class="container">
-            <div class="experience__wrapper">
-                <div class="experience__box">
-                    <span class="year">2021-2022</span>
-                    <h4 class="experience__text">UI/UX DESIGNER</h4>
-                    <span class="experience__company">HB Company</span>
-                    <p class="experience__description">
-                        I have responsibly led a team of 12 designers to help, supervise and approve their designs to 
-                        make sure it matches client expectations and latest design standards.
-                    </p>
+            <div class="skill__Experience-inner-container">
+                <div class="skill__wrapper">
+                    <div class="skill__title-inner-wrapper">
+                        <h1 class="skills__title">Skills</h3>
+                    </div>
+                    <div class="skills-column">
+                        <h3 class="skills-one">Html</h3>
+                        <h3 class="skills-one">Css</h3>
+                        <h3 class="skills-one">Wordpress</h3>
+                        <h3 class="skills-one">Tailwindcss</h3>
+                        <h3 class="skills-one">Figma</h3>
+                    </div>
                 </div>
-                <div class="experience__box">
-                    <span class="year">2021-2022</span>
-                    <h4 class="experience__text">UI/UX DESIGNER</h4>
-                    <span class="experience__company">HB Company</span>
-                    <p class="experience__description">
-                        I was responsible for all the in-house and client-based web development assignments. 
-                        I take pride in having helped the best of clients and getting maximum ratings for the company.
-                    </p>
-                </div>
-                <div class="experience__box">
-                    <span class="year">2021-2022</span>
-                    <h4 class="experience__text">UI/UX DESIGNER</h4>
-                    <span class="experience__company">HB Company</span>
-                    <p class="experience__description">
-                        I was a part of an amazing design team and worked together with them to help design and 
-                        develop apps and websites for different clients of the company.
-                    </p>
+                <!-- skill -->
+                <div class="skill__wrapper experience__wrapper">
+                    <div class="experience__title-inner-wrapper">
+                        <h1 class="experience__title">Experience</h1>
+                    </div>
+                    <div class="experience__box">
+                        <span class="year">2021-2022</span>
+                        <svg class="experience__box-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
+                        <h3 class="experience__company">HB Company</h3>
+                        <h4 class="experience__text">UI/UX DESIGNER</h4>
+                        <p class="experience__description">
+                            I have responsibly led a team of 12 designers to help, supervise and approve their designs to 
+                            make sure it matches client expectations and latest design standards.
+                        </p>
+                    </div>
+                    <div class="experience__box">
+                        <span class="year">2021-2022</span>
+                        <svg class="experience__box-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
+                        <h3 class="experience__company">HB Company</h3>
+                        <h4 class="experience__text">UI/UX DESIGNER</h4>
+                        <p class="experience__description">
+                            I was responsible for all the in-house and client-based web development assignments. 
+                            I take pride in having helped the best of clients and getting maximum ratings for the company.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,19 +206,16 @@
                 </div>
                 <div class="project__boxes">
                     <div class="project__box">
-                        <img src="/assets/images/developer-image.jpg" alt="">
+                        <img src="/images/developer-image.jpg" alt="">
                     </div>
                     <div class="project__box">
-                        <img src="/assets/images/developer-image.jpg" alt="">
+                        <img src="/images/developer-image.jpg" alt="">
                     </div>
                     <div class="project__box">
-                        <img src="/assets/images/developer-image.jpg" alt="">
+                        <img src="/images/developer-image.jpg" alt="">
                     </div>
                     <div class="project__box">
-                        <img src="/assets/images/developer-image.jpg" alt="">
-                    </div>
-                    <div class="project__box">
-                        <img src="/assets/images/developer-image.jpg" alt="">
+                        <img src="/images/developer-image.jpg" alt="">
                     </div>
                 </div>
             </div>

@@ -205,16 +205,26 @@ ul {
 
 .developer__img {
   border-radius: 100%;
+  width: 500px;
+  height: 500px;
 }
 
-h5.developer__text-caption {
+@media screen and (max-width: 768px) {
+  .developer__img {
+    width: 100%;
+    max-height: 250px;
+    max-width: 250px;
+  }
+}
+
+.developer__text-caption {
   display: inline-block;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 25px;
 }
 
-h5.developer__text-caption::before {
+.developer__text-caption::before {
   position: absolute;
   bottom: -5px;
   content: "";
@@ -235,11 +245,18 @@ h5.developer__text-caption::before {
   font-family: "Playfair Display", serif;
 }
 
+@media screen and (min-width: 1024px) {
+  .developer__name-title {
+    font-size: 60px;
+  }
+}
+
 .developer__occu_title {
   color: #758398;
   font-weight: bold;
   margin-bottom: -23px;
-  font-size: 23px;
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
 }
 
 .developer__about-description {
@@ -258,22 +275,7 @@ h5.developer__text-caption::before {
   width: 100%;
 }
 
-.developer__whatIdo__todo-title {
-  margin: 0;
-  font-size: 35px;
-  padding: 0 0 12px;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-
-.developer__description__text-black {
-  font-size: 16px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  width: 100%;
-  color: #758398;
-}
-
-li.developer__email-item {
+.developer__email-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,55 +307,54 @@ li.developer__email-item {
   text-transform: uppercase;
 }
 
-.developer__about__skills-right {
-  text-align: center;
-}
-
-.developer__task {
-  border-bottom: 1px solid #08408812;
-}
-
-@media screen and (min-width: 768px) {
-  .developer__task {
-    border-right: 1px solid #08408812;
-    border-bottom: 0;
-    padding: 0 25px;
-  }
-}
-
-.tasks {
+.todo {
   background-color: #f6f8fa;
+  padding: 13px 0;
 }
 
-.tasks .developer__task-inner-left {
+.todo .developer__task-inner-left {
   padding: 35px 0;
 }
 
-.task__wrapper {
+.todo .developer__icon-arrow {
+  color: #009BDF;
+  width: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .todo .developer__icon-arrow {
+    width: 100px;
+  }
+}
+
+.todo .developer__icon {
+  color: #009BDF;
+  width: 35px;
+}
+
+.developer__task-todo-wrapper {
   text-align: center;
 }
 
-.task__wrapper .developer__about__skills-right {
+.developer__task-todo-wrapper .developer__about__skills-right {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .task__wrapper {
+  .developer__task-todo-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: left;
     gap: 60px;
   }
-  .task__wrapper .developer__task-1 .developere__task-2 .developer__task-3 {
+  .developer__task-todo-wrapper .developer__task-1 .developere__task-2 .developer__task-3 {
     padding: 20px;
   }
-  .task__wrapper .developer__task-inner-left {
+  .developer__task-todo-wrapper .developer__task-inner-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -368,14 +369,18 @@ li.developer__email-item {
   }
 }
 
-.task__wrapper .developer__icon {
-  color: #009BDF;
-}
-
-.task__wrapper .developer__task-title-left {
+.developer__task-todo-wrapper .developer__task-title-left {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+
+.developer__whatIdo__todo-title {
+  margin: 0;
+  font-size: 35px;
+  padding: 0 0 12px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 .developer__todo-description {
@@ -385,8 +390,20 @@ li.developer__email-item {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.developer__box-icon-arrow {
+@media screen and (min-width: 768px) {
+  .developer__todo-description {
+    width: 50%;
+  }
+}
+
+.developer__todo-box-icon {
   color: #758398;
+}
+
+@media screen and (min-width: 768px) {
+  .developer__todo-box-icon {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -397,10 +414,36 @@ li.developer__email-item {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .task__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.task__wrapper .developer__task {
+  text-align: center;
+  border-bottom: 1px solid #08408812;
+  padding: 35px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .task__wrapper .developer__task {
+    border-right: 1px solid #08408812;
+    border-bottom: 0;
+    padding: 0 25px;
+  }
+}
+
+.task__wrapper .developer__task-caption {
+  color: #758398;
 }
 
 .projects {
@@ -444,21 +487,22 @@ li.developer__email-item {
   font-size: 35px;
   font-weight: 800;
   line-height: 111px;
+  font-family: "Playfair Display", serif;
 }
 
 .skills-one {
   padding: 0 10px 26px;
+  font-size: 16px;
+  color: #758398;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .skills-column {
-  display: inline-block;
-  text-transform: uppercase;
   position: relative;
 }
 
 .skills-one {
   display: block;
-  text-transform: uppercase;
   position: relative;
   margin-bottom: 25px;
 }
@@ -469,7 +513,58 @@ li.developer__email-item {
   content: "";
   height: 1px;
   background-color: #08408812;
-  width: 100%;
+  width: 85%;
+}
+
+.experience__wrapper .experience__box {
+  padding: 0 0 65px;
+}
+
+.experience__wrapper .experience__title {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 111px;
+  font-family: "Playfair Display", serif;
+}
+
+.experience__wrapper .experience__box-icon {
+  width: 20px;
+}
+
+.experience__wrapper .year {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
+  padding: 0 50px 0 0;
+}
+
+.experience__wrapper .experience__company {
+  font-size: 16px;
+  color: #758398;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 0 50px 30px 0;
+}
+
+.experience__wrapper .experience__text {
+  font-size: 20px;
+  color: #009BDF;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__Experience-inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skill__Experience-inner-container .skill__wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .container {

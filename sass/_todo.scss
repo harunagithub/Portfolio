@@ -1,11 +1,25 @@
-.tasks {
+.todo {
     background-color: #f6f8fa;
+    padding: 13px 0;
 
     .developer__task-inner-left {
         padding: 35px 0;
     }
+    .developer__icon-arrow{
+        color: $primaryColor;
+        width: 80px;
+
+        @media screen and (min-width: 768px) {
+        width: 100px;
+            
+        }
+    }
+    .developer__icon{
+        color: $primaryColor;
+        width: 35px;
+    }
 }
-.task__wrapper {
+.developer__task-todo-wrapper {
     text-align: center;
     .developer__about__skills-right{
         display: block;
@@ -13,7 +27,7 @@
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        text-align: left;
         gap: 60px;
         .developer__task-1 .developere__task-2 .developer__task-3 {
             padding: 20px;
@@ -26,32 +40,43 @@
             width: 100%;
         }
         }
-        .developer__icon{
-            color: $primaryColor;
-        }
         .developer__task-title-left{
             font-family: $fontFamliy;
             font-weight: bold;
             font-size: 18px;
-
         }
+    }
+    
+    .developer__whatIdo__todo-title {
+        margin: 0;
+        font-size: 35px;
+        padding: 0 0 12px;
+        font-family: $fontFamliy2;
+        font-weight: bold;
     }
     .developer__todo-description{
         color: $secondaryColor;
         font-size: 16px;
         font-weight: 400;
-        font-family: $fontFamliy
-    }
-    .developer__box-icon-arrow{
-        color: $secondaryColor;
-    }
+        font-family: $fontFamliy;
 
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+    }
+    .developer__todo-box-icon{
+        color: $secondaryColor;
+
+        @media screen and (min-width:768px) {
+            text-align: center;
+        }
+    }
     .developer__todo-right {
 
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            // align-items: center;
         }
     }
   
