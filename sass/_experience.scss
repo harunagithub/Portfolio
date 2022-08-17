@@ -2,6 +2,11 @@
 
     .experience__box{
         padding: 0 0 65px;
+        
+        @media screen and (min-width: 768px) {
+            display: flex;
+        
+        }
     }
     .experience__title{
         color: #000000;
@@ -13,6 +18,7 @@
 
     .experience__box-icon {
         width: 20px;
+    
     }
     
     .year{
@@ -22,6 +28,7 @@
         font-weight: bold;
         padding: 0 50px 0 0;
 
+
     }
     .experience__company{
         font-size: 16px;
@@ -30,10 +37,10 @@
         padding: 0 50px 30px 0;
     }
     .experience__text{
-        font-size: 20px;
+        font-size: 1.294118rem;
+        font-weight: 600;
         color: $primaryColor;
         font-family: $fontFamliy;
-        font-weight: bold;
     }
 
 }

@@ -4,6 +4,12 @@
 
     .developer__task-inner-left {
         padding: 35px 0;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            column-gap: 19px;
+        }
     }
     .developer__icon-arrow{
         color: $primaryColor;
@@ -17,6 +23,7 @@
     .developer__icon{
         color: $primaryColor;
         width: 35px;
+        margin-bottom: 15px;
     }
 }
 .developer__task-todo-wrapper {
@@ -24,11 +31,13 @@
     .developer__about__skills-right{
         display: block;
     }
+
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: space-between;
         text-align: left;
         gap: 60px;
+        z-index: 1;
         .developer__task-1 .developere__task-2 .developer__task-3 {
             padding: 20px;
         }
@@ -40,11 +49,13 @@
             width: 100%;
         }
         }
-        .developer__task-title-left{
-            font-family: $fontFamliy;
-            font-weight: bold;
-            font-size: 18px;
-        }
+      
+    }
+    .developer__task-title-left{
+        font-family: $fontFamliy;
+        font-weight: 600;
+        font-size: 1.294118rem;
+         
     }
     
     .developer__whatIdo__todo-title {

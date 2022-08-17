@@ -200,20 +200,39 @@ ul {
   right: 0;
   top: 0;
   opacity: 0.5;
-  z-index: -1;
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .developer__inner-img {
+    max-width: 428px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .developer__inner-img {
+    max-width: 828px;
+  }
 }
 
 .developer__img {
   border-radius: 100%;
-  width: 500px;
-  height: 500px;
+  width: 490px;
+  height: 490px;
 }
 
 @media screen and (max-width: 768px) {
   .developer__img {
     width: 100%;
-    max-height: 250px;
-    max-width: 250px;
+    max-height: 350px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .developer__img {
+    width: 635px;
+    height: 635px;
   }
 }
 
@@ -316,6 +335,19 @@ ul {
   padding: 35px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .todo .developer__task-inner-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 19px;
+            column-gap: 19px;
+  }
+}
+
 .todo .developer__icon-arrow {
   color: #009BDF;
   width: 80px;
@@ -330,6 +362,7 @@ ul {
 .todo .developer__icon {
   color: #009BDF;
   width: 35px;
+  margin-bottom: 15px;
 }
 
 .developer__task-todo-wrapper {
@@ -350,6 +383,7 @@ ul {
             justify-content: space-between;
     text-align: left;
     gap: 60px;
+    z-index: 1;
   }
   .developer__task-todo-wrapper .developer__task-1 .developere__task-2 .developer__task-3 {
     padding: 20px;
@@ -369,10 +403,10 @@ ul {
   }
 }
 
-.developer__task-todo-wrapper .developer__task-title-left {
+.developer__task-title-left {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 1.294118rem;
 }
 
 .developer__whatIdo__todo-title {
@@ -553,6 +587,14 @@ ul {
   padding: 0 0 65px;
 }
 
+@media screen and (min-width: 768px) {
+  .experience__wrapper .experience__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .experience__wrapper .experience__title {
   color: #000000;
   font-size: 35px;
@@ -581,10 +623,10 @@ ul {
 }
 
 .experience__wrapper .experience__text {
-  font-size: 20px;
+  font-size: 1.294118rem;
+  font-weight: 600;
   color: #009BDF;
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
