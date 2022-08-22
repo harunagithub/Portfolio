@@ -1,9 +1,31 @@
 .projects{
     background-color: #f6f8fa;
 
+    .project__wrapper {
+        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        padding: 100px 0 150px;
+
+        @media screen and (max-width: 768px) {
+        padding: 65px 15px 15px;
+            
+        }
+    }
+    .project__title-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        // padding: 0 27px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     .project__title{
         color: #000000;
-        font-size: 35px;
+        font-size: 34px;
         font-weight: 800;
         line-height: 111px;
         font-family: $fontFamliy2;
@@ -20,7 +42,7 @@
         width: 25%;
 
         @media screen and (min-width: 768px) {
-            width: 12%;
+            width: 14%;
         }
     }
     
@@ -29,23 +51,39 @@
         grid-template-columns: 33.33% 33.33% 33.33%;
         gap: 19px;
         max-width: 892px;
+        
+        @media screen and (min-width: 768px) {
+            // display: grid;
+            grid-template-columns: 50% 50%;
+        }
 
-    }
-    .project__title-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     .project__boxes {
         .project__box{
-            padding: 10px;
+            padding: 0 14px;
+            // box-shadow: -1px 7px 8px 0 rgba(0, 0, 0, 0.1);
+            // padding: 50px 0 0;
+
+            .project__box-inner{
+                box-shadow: -1px 7px 8px 0 rgba(0, 0, 0, 0.4%);
+    
+            }
         }
-        // padding: 0 68px;
+    
+        .project__box img{
+            border-radius: 5px;
+            height: auto;
+
+        }
         @media screen and (min-width: 768px) {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 33.33% 33.33% 33.33%;
             width: 100%;
         }
+
+        @media screen and (min-width: 1366px) {
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        } 
     }
 
 }

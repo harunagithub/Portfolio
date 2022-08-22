@@ -10,7 +10,6 @@
         border-bottom: 1px solid #08408812;
         padding: 35px 0px;
 
-
         @media screen and (min-width: 768px) {
          border-right: 1px solid #08408812;
          border-bottom: 0;
@@ -20,6 +19,7 @@
      } 
      .developer__task-caption{
         color: $secondaryColor;
+
      }
 
 }

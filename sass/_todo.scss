@@ -13,7 +13,7 @@
     }
     .developer__icon-arrow{
         color: $primaryColor;
-        width: 80px;
+        width: 55px;
 
         @media screen and (min-width: 768px) {
         width: 100px;
@@ -54,7 +54,11 @@
     .developer__task-title-left{
         font-family: $fontFamliy;
         font-weight: 600;
-        font-size: 1.294118rem;
+        
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
+// Tablet
          
     }
     
@@ -64,6 +68,15 @@
         padding: 0 0 12px;
         font-family: $fontFamliy2;
         font-weight: bold;
+
+        @media screen  and (min-width: 678px) {
+            font-size: 43px;
+        }
+// Tablet
+        @media screen  and (min-width: 1366px) {
+            font-size: 50px;
+        }
+// Desktop
     }
     .developer__todo-description{
         color: $secondaryColor;
@@ -73,10 +86,20 @@
 
         @media screen and (min-width: 768px) {
             width: 50%;
+            font-size: 16px;
+        }
+// Tablet
+        @media screen and (min-width: 1024px) {
+            font-size: 17px;
+        } 
+//  Laptop
+        @media screen and (min-width: 1366px) {
+            font-size: 17px;
         }
     }
     .developer__todo-box-icon{
         color: $secondaryColor;
+        text-align-last: center;
 
         @media screen and (min-width:768px) {
             text-align: center;

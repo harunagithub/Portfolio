@@ -1,0 +1,99 @@
+.site__footer{
+        /* position: absolute; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // background: $;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        color: #fff;
+}
+.site__primary-footer{
+        padding-top: 75px;
+        padding-bottom: 50px;
+
+        @media screen and (min-width: 700px) {
+            display: flex;
+            justify-content: space-between;
+            text-align-last: left;
+        }
+        
+
+        .site__footer__inner-wrap{
+
+            .site__footer-title-wrapper{
+                // text-align: center;
+                .widget__title{
+                    font-size: 22px;
+                    font-family: $fontFamliy2;
+                    font-weight: bolder;
+                    text-align: center;
+                    
+    
+                }
+            }
+
+            .widget__text-wrapper{
+                text-align: center;
+
+                .widget__getintouch{
+                    font-size: 45px;
+                    font-family: $fontFamliy2;
+                    font-weight: bolder;
+                    &:hover{
+                        color: $primaryColor;
+                        transition: all .2s linear;
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        font-size: 67px;
+                    }
+                }
+                
+            }
+
+        }
+        .site__menu-container{
+            text-align: center;
+
+            @media screen and (min-width: 800px) {
+                display: flex;
+                gap: 62px;
+            }
+
+            .site__menu-column-1{
+
+                .site__nav-widget-title{
+                    font-size: 22px;
+                    font-family: $fontFamliy2;
+                    font-weight: bold;
+
+                }
+            }
+            .site__menu-column-2{
+
+                .site__nav-widget-title{
+                    font-size: 22px;
+                    font-family: $fontFamliy2;
+                    font-weight: bold;
+
+                }
+            }
+
+            .site__menu-item{
+                display: grid;
+                .site__menu-link{
+                    font-size: 15px;
+                    color: $secondaryColor;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+}
+
+.site__footer-copyright p{
+    text-align: center;
+    color: $secondaryColor;
+}
