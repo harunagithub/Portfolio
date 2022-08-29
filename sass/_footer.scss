@@ -43,7 +43,7 @@
                     font-weight: bolder;
                     &:hover{
                         color: $primaryColor;
-                        transition: all .2s linear;
+                        transition: all .3s linear;
                     }
 
                     @media screen and (min-width: 1024px) {
@@ -88,6 +88,10 @@
                     color: $secondaryColor;
                     font-weight: 400;
                     text-decoration: none;
+                    &:hover{
+                        color: $primaryColor;
+                        transition: all .3s linear;
+                    }
                 }
             }
         }

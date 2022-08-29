@@ -10,6 +10,10 @@
 @import '_experience.scss';
 @import '_project.scss';
 @import '_footer.scss';
+@import '_service.scss';
+@import '_contact.scss';
+@import '_about.scss';
+@import '_parallax.scss';
 
 .container{
     max-width: 1200px;
@@ -21,3 +25,39 @@
     width: 30px;
     height: 30px;
 }
+
+
+    /* Hvr-Float */
+    .hvr-float {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+      }
+      .hvr-float:hover,
+      .hvr-float:focus,
+      .hvr-float:active {
+        transform: translateY(-8px);
+      }
+      /* Hvr-Grow */
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.1);
+    }

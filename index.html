@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Hover-master/css/hover.css">
 </head>
 <body>
     <!-- header-->
@@ -14,7 +15,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="#">HB <span>Haruna Bah</span></a>
+                    <a href="index.html">HB <span>Haruna Bah</span></a>
                 </div>
                 <div class="header__mobile">
                     <svg class="menu__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -22,16 +23,19 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link current-page">Home</a>
+                            <a href="index.html" class="nav__link current-page">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
+                            <a href="about.html" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Project</a>
+                            <a href="service.html" class="nav__link">Service</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Resume</a>
+                            <a href="portfolio.html" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact" class="nav__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -87,7 +91,9 @@
                         final product, I do everything that falls in between these lines. 
                     </p>
                     <div class="developer__todo-box-icon">
-                    <svg class="developer__icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        <a href="#">
+                            <svg class="developer__icon-arrow hvr-float" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -132,6 +138,20 @@
     </section>
 
     <!-- parallax section -->
+    <section>
+        <div class="div" id="first" style="background-image: url(/images/developer-image.jpg);">
+            <!-- <h2>First Section</h2> -->
+        </div>
+    </section>
+      <!-- <div id="second">
+        <h2>Second Section</h2>
+      </div>
+      <div id="third">
+        <h2>Third Section</h2>
+      </div>
+      <div id="fourth">
+        <h2>Fourth Section</h2>
+      </div> -->
     <!-- parallax section -->
 
     <!-- skills -->
@@ -151,7 +171,7 @@
                         <h3 class="skills-one">Figma</h3>
                     </div>
                 </div>
-                <!-- skill -->
+                <!-- skill -->gi
                 <div class="skill__wrapper experience__wrapper">
                     <div class="experience__title-inner-wrapper">
                         <h1 class="experience__title">Experience</h1>
@@ -196,16 +216,18 @@
             <div class="project__wrapper">
                 <div class="project__title-box">
                     <h2 class="project__title">Projects</h2>
-                    <svg class="developer__icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    <a href="">
+                        <svg class="developer__icon-arrow hvr-float" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    </a>
                 </div>
                 <div class="project__boxes">
-                    <div class="project__box">
+                    <div class="project__box hvr-grow">
                         <a class="project__box-inner" href="#"><img src="/images/portfolio-home.png" alt=""></a>
                     </div>
-                    <div class="project__box">
+                    <div class="project__box hvr-grow">
                         <a class="project__box-inner" href="#"><img src="/images/VariousCategories-About-Page.png" alt=""></a>
                     </div>
-                    <div class="project__box">
+                    <div class="project__box hvr-grow">
                         <a class="project__box-inner" href="#"><img src="/images/portfolo-project-section.png" alt=""></a>
                     </div>
                 </div>
@@ -261,6 +283,8 @@
     </footer>
     <!-- footer -->
 
-
+    <script src="/JS/app.js">
+        
+    </script>
 </body>
 </html>

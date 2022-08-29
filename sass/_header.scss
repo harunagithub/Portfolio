@@ -1,6 +1,7 @@
 .header {
     padding-top: 10px;
     margin-bottom: 57px;
+    // background-color: #f6f8fa;
     
     @media screen and (min-width: 768px) {
         min-height: 40px;
@@ -18,7 +19,8 @@
         font-weight: bold;
         color: $primaryColor;
         display: block;
-    }}
+    }
+}
     .header__logo span{
         font-size: 23px;
     }

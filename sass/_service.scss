@@ -1,0 +1,63 @@
+.services, .experiences{
+    background-color: #f6f8fa;
+
+    .service-content {
+       text-align: center;
+        @media screen and(min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .service__name-title {
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 25px;
+
+        @media screen and (min-width: 1366px) {
+            font-size: 83px;
+        }
+
+        &::after{
+            position: absolute;
+            bottom: -5px;
+            content: "";
+            height: 2px;
+            background-color: $secondaryColor;
+            width: 44px;
+        }
+       
+    } 
+    .service-title {
+        color: #000000;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 41px;
+        font-family: "Playfair Display", serif;
+
+        @media screen and (min-width: 768px) {
+            font-size: 43px;
+        }
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 50px;
+        }
+    }
+    .service__icon-arrow{
+        width: 100%;
+        height: 50px;
+        color: $primaryColor;
+
+        @media screen and (min-width: 768px) {
+            height: 100px;
+           
+        }
+    }
+
+    .latest-work {
+        padding: 150px 0 140px;
+    }
+
+    
+}

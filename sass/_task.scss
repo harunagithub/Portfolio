@@ -1,8 +1,9 @@
 .task__wrapper{
+    margin-bottom: 88px;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
     }
 
     .developer__task {

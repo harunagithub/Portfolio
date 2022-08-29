@@ -15,11 +15,13 @@
         justify-content: center;
         align-items: center;
         gap: 28px;
+        margin-bottom: 20px;
         // padding: 0 27px;
 
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -39,21 +41,31 @@
     }
     .developer__icon-arrow{
         color: $primaryColor;
-        width: 25%;
+        width: 100%;
+        height: 80px;
 
         @media screen and (min-width: 768px) {
-            width: 14%;
+            height: 100px;
         }
+
+        @media screen and (min-width: 1024px) {
+            height: 110px;
+        }
+        
+
     }
     
     .portfolio__boxes {
         display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
         gap: 19px;
         max-width: 892px;
         
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 726px) {
             // display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        @media screen and (max-width: 1024px) {
+            display: grid;
             grid-template-columns: 50% 50%;
         }
 
@@ -61,13 +73,22 @@
     .project__boxes {
         .project__box{
             padding: 0 14px;
-            // box-shadow: -1px 7px 8px 0 rgba(0, 0, 0, 0.1);
-            // padding: 50px 0 0;
+            margin-bottom: 40px;
 
             .project__box-inner{
-                box-shadow: -1px 7px 8px 0 rgba(0, 0, 0, 0.4%);
+                box-shadow: 3px 3px 12px 0 rgba(0, 0, 0, 0.2%);
+                &:hover{
+                    box-shadow: 3px 3px 12px 0 rgba(0, 0, 0, 0.2%);
+                    display: block;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    transition: all .4s linear;
     
+        
+                }
+
             }
+
         }
     
         .project__box img{

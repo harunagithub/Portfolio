@@ -1,0 +1,86 @@
+.abouts{
+    padding: 0 16px 16px;
+
+    .about__title-me{
+        font-size: 16px;
+        font-family: $fontFamliy;
+        color: $primaryColor;
+        font-weight: 500;
+    }
+    .about__title{
+        font-size: 25px;
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        color: #000000;
+        line-height: 1.1;
+        margin-bottom: 48px;
+        width: 83%;
+
+        @media screen and (min-width: 768px) {
+            font-size: 43px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 50px;
+        }
+        
+    }
+    .award__wrapper{
+        width: 83;
+        padding: 49px 0 61px;
+
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+        .award__col{
+            padding: 0 0 25px;
+            box-sizing: border-box;
+
+            @media screen and (min-width: 768px) {
+                flex: 1;
+                
+            }
+            .award__title{
+                font-size: 20px;
+                font-family: $fontFamliy2;
+                font-weight: 800;
+                color: $primaryColor;
+                line-height: 1.2;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 30px;
+                    
+                }
+            }
+        }
+    }
+}
+.award__description-1 .award__description-2{
+    width: 91%;
+
+}
+.award__description-1{
+    font-size: 14px;
+    color: #000000;
+    font-family: $fontFamliy;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 17px;
+    }
+
+}
+.award__description-2{
+    font-size: 14px;
+    color: $secondaryColor;
+    font-family: $fontFamliy;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+        font-size: 17px;
+    }
+    
+}
