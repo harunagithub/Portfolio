@@ -961,15 +961,6 @@ h1 {
   padding: 150px 0 140px;
 }
 
-:root {
-  /* //....... Color ........// */
-  --primary-color: #ff3c78;
-  --light-black: rgba(0, 0, 0, 0.89);
-  --black: #000;
-  --white: #fff;
-  --grey: #aaa;
-}
-
 .contact {
   margin-top: 45px;
 }
@@ -988,11 +979,19 @@ h1 {
 
 .form .form-title {
   font-size: 35px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.form .form-sub-caption {
+  font-size: 16px;
+  color: #758398;
 }
 
 .form .form-txt {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .form .form-txt h1 {
@@ -1009,21 +1008,10 @@ h1 {
   font-size: 16px;
 }
 
-.form .form-txt h3 {
-  font-size: 35px;
-  font-weight: 600;
-  margin: 15px 0;
-  color: var(--light-black);
-}
-
-.form .form-txt p {
-  color: var(--light-black);
-  font-size: 14px;
-}
-
 .form .form-details {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .form .form-details input[type="text"],
@@ -1046,11 +1034,11 @@ h1 {
   resize: none;
 }
 
-.form .form-details button {
+button {
   padding: 15px 25px;
-  color: var(--white);
+  color: #fff;
   font-weight: 500;
-  background: var(--black);
+  background: #009BDF;
   outline: none;
   border: none;
   margin: 15px;
@@ -1105,6 +1093,21 @@ h1 {
   .form .form-details input[type="text"] {
     margin-bottom: 0px;
   }
+}
+
+input, textarea {
+  background: #caffff;
+  border-radius: 3px;
+}
+
+input:hover {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+input#email {
+  width: 100%;
+  max-width: 454px;
 }
 
 .about-page .abouts {
