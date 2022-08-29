@@ -51,12 +51,32 @@
   // #fourth {
   //   background: #b48648;
   // }
+
   .parallax-content{
+    padding: 50px 0;
+    gap: 36px;
+    margin-bottom: 416px;
+
     @media screen  and (min-width: 768px) {
       display: grid;
       grid-template-columns: 50% 50%;
     }
+    @media screen  and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .box-column {
+      margin-top: 16px;
   }
+  }
+  
+  .parallax-left-column {
+
+    @media screen  and (min-width: 768px) {
+      margin-top: 41px;
+    }
+ }
   .parallax__caption{
     color: #fff;
     font-size: 17px;
@@ -68,11 +88,16 @@
   .box {
     background-color: lightblue;
     width: 100%;
-    max-width: 290px;
+    max-width: 280px;
     height: 395px;
     padding: 20px;
     list-style: none;
     position: absolute;
+
+    @media screen and (min-width: 1024px) {
+      width: 100%;
+      max-width: 483px;
+    }
   }
   
   .progress-bar {
