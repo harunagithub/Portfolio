@@ -7,7 +7,7 @@
   .div {
     
     width: 100%;
-    min-height: 70vh;
+    min-height: 65vh;
   }
   
   .parallax__text-title{
@@ -53,30 +53,20 @@
   // }
 
   .parallax-content{
-    padding: 50px 0;
-    gap: 36px;
-    margin-bottom: 416px;
+    position: relative;
+    padding: 150px 0 20px;
 
     @media screen  and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: 50% 50%;
+      display: flex;
+      gap: 41px;
     }
-    @media screen  and (min-width: 1024px) {
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-
-    .box-column {
-      margin-top: 16px;
   }
+  .parallax-column {
+    flex: 1;
+    position: relative;
+    margin-bottom: 21px;
+	
   }
-  
-  .parallax-left-column {
-
-    @media screen  and (min-width: 768px) {
-      margin-top: 41px;
-    }
- }
   .parallax__caption{
     color: #fff;
     font-size: 17px;
@@ -88,17 +78,10 @@
   .box {
     background-color: lightblue;
     width: 100%;
-    max-width: 280px;
-    height: 395px;
-    padding: 20px;
+    padding: 61px;
     list-style: none;
     position: absolute;
-
-    @media screen and (min-width: 1024px) {
-      width: 100%;
-      max-width: 483px;
-    }
-  }
+}
   
   .progress-bar {
     width: 100%;

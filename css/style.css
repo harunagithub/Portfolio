@@ -559,7 +559,7 @@ h1 {
 }
 
 .experience__wrapper {
-  margin-top: 50px;
+  margin-top: 350px;
 }
 
 .experience__wrapper .experience__box {
@@ -1070,7 +1070,7 @@ h1 {
 
 .div {
   width: 100%;
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .parallax__text-title {
@@ -1105,37 +1105,25 @@ h1 {
 }
 
 .parallax-content {
-  padding: 50px 0;
-  gap: 36px;
-  margin-bottom: 416px;
+  position: relative;
+  padding: 150px 0 20px;
 }
 
 @media screen and (min-width: 768px) {
   .parallax-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 41px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .parallax-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-}
-
-.parallax-content .box-column {
-  margin-top: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .parallax-left-column {
-    margin-top: 41px;
-  }
+.parallax-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin-bottom: 21px;
 }
 
 .parallax__caption {
@@ -1151,18 +1139,9 @@ h1 {
 .box {
   background-color: lightblue;
   width: 100%;
-  max-width: 280px;
-  height: 395px;
-  padding: 20px;
+  padding: 61px;
   list-style: none;
   position: absolute;
-}
-
-@media screen and (min-width: 1024px) {
-  .box {
-    width: 100%;
-    max-width: 483px;
-  }
 }
 
 .progress-bar {
