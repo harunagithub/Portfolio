@@ -2,10 +2,10 @@
     margin-top: 510px;
 }
 .experience__wrapper{
-    @media screen and (min-width: 768px) {
-    margin-top: 272px;
+    // @media screen and (min-width: 768px) {
+    // margin-top: 272px;
         
-    }
+    // }
 
     .experience__box{
         padding: 0 0 65px;
@@ -22,7 +22,6 @@
         line-height: 111px;
         font-family: $fontFamliy2;
     }
-
     .experience__box-icon {
         width: 20px;
     

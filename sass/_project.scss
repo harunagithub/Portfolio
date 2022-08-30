@@ -3,7 +3,8 @@
 
     .project__wrapper {
         transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-        padding: 100px 0 150px;
+        padding: 18px 0 150px;
+        // padding: 100px 0 150px;
 
         @media screen and (max-width: 768px) {
         padding: 65px 15px 15px;

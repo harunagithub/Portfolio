@@ -297,8 +297,13 @@ h1 {
 
 .developer__col-left {
   margin-top: 18px;
-  margin-bottom: -10px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .developer__col-left {
+    margin-bottom: 294px;
+  }
 }
 
 .developer__email-item {
@@ -537,6 +542,7 @@ h1 {
   font-size: 16px;
   color: #758398;
   font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 17px;
 }
 
 .skills-column {
@@ -553,19 +559,14 @@ h1 {
   position: absolute;
   bottom: 10px;
   content: "";
-  height: 1px;
-  background-color: #08408812;
+  height: 7px;
+  background-color: #009BDF;
   width: 85%;
+  border-radius: 23px;
 }
 
 .about-page .experiences {
   margin-top: 510px;
-}
-
-@media screen and (min-width: 768px) {
-  .experience__wrapper {
-    margin-top: 272px;
-  }
 }
 
 .experience__wrapper .experience__box {
@@ -636,7 +637,7 @@ h1 {
   transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
   transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
   transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
-  padding: 100px 0 150px;
+  padding: 18px 0 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -959,6 +960,11 @@ h1 {
 
 .services .latest-work, .experiences .latest-work {
   padding: 150px 0 140px;
+}
+
+.header-developer-bg {
+  background-color: #f6f8fa;
+  /* padding: 2px 0; */
 }
 
 .contact {
@@ -1347,10 +1353,6 @@ input#email {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.header .developers {
-  background-color: grey;
 }
 
 .menu__icon {

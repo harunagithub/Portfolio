@@ -103,8 +103,12 @@
             }
             .developer__col-left {
                 margin-top: 18px;
-                margin-bottom: -10px;
                 width: 100%;
+
+                @media screen and (min-width: 768px) {
+                margin-bottom: 294px;
+                    
+                }
             }
         .developer__email-item {
             display: flex;

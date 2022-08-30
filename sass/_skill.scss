@@ -13,6 +13,7 @@
     font-size: 16px;
     color: $secondaryColor;
     font-family: $fontFamliy;
+    font-size: 17px;
 
 }
 .skills-column {
@@ -27,8 +28,10 @@
         position: absolute;
         bottom: 10px;
         content: "";
-        height: 1px;
-        background-color: #08408812;
+        height: 7px;
+        background-color: $primaryColor;
         width: 85%;
+        border-radius: 23px;
+        
     }
 } 
