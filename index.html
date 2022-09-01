@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="/css/Hover-master/css/hover.css">
 </head>
 <body>
+    <section class=" homepage-bg">
     <!-- header-->
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="index.html">HB<span>Haruna Bah</span></a>
+                    <a href="index.html">HB <span>Haruna Bah</span></a>
                 </div>
                 <div class="header__mobile">
-                    <svg class="menu__icon" id="nav-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    <ion-icon id="menu__icon" name="reorder-four-sharp" size="large" class="menu__icon"></ion-icon>
                 </div>
-                <nav class="nav">
-                    <ul class="nav__list">
+                <nav class="nav" id="menu">
+                    <!-- <ion-icon id="close-btn" name="close-sharp" class="header__close"></ion-icon> -->
+                    <ul class="nav__list" id="nav-list">
                         <li class="nav__item">
                             <a href="index.html" class="nav__link current-page">Home</a>
                         </li>
@@ -52,20 +54,21 @@
         <div class="container">
             <div class="developer__info-inner">
                 <div class="developer__col-left">
-                    <h5 class="developer__text-caption">Hello, I am nobody</h5>
+                    <h5 class="developer__text-caption">Hello, My Name is</h5>
                     <h1 class="developer__name-title">Haruna Bah</h1>
                     <h4 class="developer__occu_title">Web Developer</h4>
                     <div class="developer__col-1-inner">
                         <ul class="developer__list">
                             <li class="developer__email-item">
                                 <span>
-                                    <i class="fa fa-envelope-square" style="font-size:24px"></i>
+                                    <ion-icon size="large" name="mail"></ion-icon>
                                 </span>
                                 <a href="mailto:harunabah101@gmail.com" class="developer__email-link">harunabah101@gmail.com</a>
                             </li>
                             <li class="developer__email-item">
                                 <span>
-                                    <i class="fa fa-phone-square" style="font-size:24px"></i>
+                                    <!-- <i class="fa fa-phone-square" style="font-size:24px"></i> -->
+                                    <ion-icon class="developer__ion-icon" size="large" name="call"></ion-icon>
                                 </span>
                                 <a href="tel:+2203400319" class="developer__call-link">+2203400319</a>
                             </li>
@@ -87,8 +90,7 @@
                 </div>
                 <div class="developer__todo-right">
                     <p class="developer__todo-description">
-                        From understanding your requirements, designing a blueprint and delivering the 
-                        final product, I do everything that falls in between these lines. 
+                        I can help you with every stage of your project, from understanding your requirements through to delivering the final product.
                     </p>
                     <div class="developer__todo-box-icon">
                         <a href="#">
@@ -99,32 +101,33 @@
             </div>
            </div>
             <div class="task__wrapper">
-                <div class="developer__task">
+                <!-- <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                        <ion-icon class="developer__icon" size="large" name="pencil-outline"></ion-icon>
                         <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                     </div>
                     <p class="developer__task-caption">
                         An effective UI/UX is what captures attention and spreads a clear message. 
                         I make sure the design is innovative and neat with all of this.
                     </p>
-                </div>
+                </div> -->
                 <!-- task-2 -->
                 <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                        <i class='fas fa-laptop-code'></i>
-                        <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
+                        <ion-icon class="developer__icon" size="large" name="laptop-outline"></ion-icon>
+                        <h3 class="developer__task-title-left">WEB DEVELOPMENTS</h3>
                     </div>
                     <p class="developer__task-caption">
-                        If you are looking for a developer who will take over the research and development of your 
-                        website, I am a well-established professional to help you with this.
+                        <!-- If you are looking for a developer who will take over the research and development of your 
+                        website, I am a well-established professional to help you with this. -->
+                        Do you have a website that needs some new features? Are you looking for someone to take over the research, design, and development of 
+                        your website? If so, I am a well-established professional who can help you with this.
                     </p>
                 </div>
                 <!-- task-3 -->
                 <div class="developer__task">
                     <div class="developer__task-inner-left">
-                        <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
+                        <ion-icon class="developer__icon" size="large" name="phone-portrait-outline"></ion-icon>
                         <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                     </div>
                     <p class="developer__task-caption">
@@ -164,11 +167,11 @@
                         <h1 class="skills__title">Skills</h3>
                     </div>
                     <div class="skills-column">
-                        <h3 class="skills-one">Html</h3>
-                        <h3 class="skills-one">Css</h3>
-                        <h3 class="skills-one">Wordpress</h3>
-                        <h3 class="skills-one">Tailwindcss</h3>
-                        <h3 class="skills-one">Figma</h3>
+                        <h3 class="skills-one"><span><ion-icon size="large" name="logo-html5"></ion-icon></span> Html</h3>
+                        <h3 class="skills-one"><span><ion-icon size="large" name="logo-css3"></ion-icon></span> Css</h3>
+                        <h3 class="skills-one"><span><ion-icon size="large" name="logo-wordpress"></ion-icon></span> Wordpress</h3>
+                        <h3 class="skills-one"><span><ion-icon size="large" name="cube-outline"></ion-icon></span> Tailwindcss</h3>
+                        <h3 class="skills-one"><span><ion-icon size="large" name="logo-figma"></ion-icon></span> Figma</h3>
                     </div>
                 </div>
                 <!-- skill -->
@@ -181,12 +184,12 @@
                     </div>
                     <svg class="experience__box-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
                     <div class="experience__box">
-                        <h5 class="experience__company">HBCompany</h4>
+                        <h5 class="experience__company">HMZ CRAETIVES</h4>
                         <div>
-                            <h4 class="experience__text">UI/UX DESIGNER</h4>
+                            <h4 class="experience__text">WEB DEVELOPER</h4>
                         <p class="experience__description">
-                            I have responsibly led a team of 12 designers to help, supervise and approve their designs to 
-                            make sure it matches client expectations and latest design standards.
+                            As a web developer, I had the opportunity to work on a number of assignments with both 
+                            in-house and client-based developers. I'm proud to have helped some of the best clients around.
                         </p>
                         </div>
                     </div>
@@ -194,13 +197,14 @@
                         <span class="year">2021-2022</span>
                     </div>
                     <svg class="experience__box-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
+
                     <div class="experience__box">
-                        <h5 class="experience__company">HBCompany</h4>
+                        <h5 class="experience__company">HMZ CREATIVES</h4>
                         <div>
-                            <h4 class="experience__text">WEB DEVELOPER</h4>
+                            <h4 class="experience__text">UI/UX DESIGNER</h4>
                         <p class="experience__description">
-                            I was responsible for all the in-house and client-based web development assignments. 
-                            I take pride in having helped the best of clients and getting maximum ratings for the company.
+                            I have been part of a team that designs, develops, and supervises projects to 
+                            ensure they meet client expectations and latest design standards.
                         </p>
                         </div>
                     </div>
@@ -235,6 +239,8 @@
         </div>
     </section>
     <!-- projects or work -->
+
+    </section>
     <!-- footer -->
     <footer class="site__footer">
         <div class="container">
@@ -283,6 +289,10 @@
     </footer>
     <!-- footer -->
 
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ionicons -->
     <script src="/JS/app.js">
         
     </script>

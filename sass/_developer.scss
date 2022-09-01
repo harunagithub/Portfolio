@@ -60,6 +60,8 @@
         text-transform: uppercase;
         position: relative;
         margin-bottom: 25px;
+        color: $secondaryColor;
+        font-weight: 600;
 
         &::before{
             position: absolute;
@@ -115,7 +117,7 @@
             align-items: center;
             gap: 15px;
         }
-        .developer__email-item  span i {
+        .developer__email-item  span ion-icon {
             color: $primaryColor;
         }
         .developer__call-link  span i {

@@ -17,15 +17,16 @@
                         <a href="index.html">HB <span>Haruna Bah</span></a>
                     </div>
                     <div class="header__mobile">
-                        <svg class="menu__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <ion-icon id="menu__icon" name="reorder-four-sharp" size="large" class="menu__icon"></ion-icon>
                     </div>
-                    <nav class="nav">
-                        <ul class="nav__list">
+                    <nav class="nav" id="menu">
+                        <!-- <ion-icon id="close-btn" name="close-sharp" class="header__close"></ion-icon> -->
+                        <ul class="nav__list" id="nav-list">
                             <li class="nav__item">
                                 <a href="index.html" class="nav__link current-page">Home</a>
                             </li>
                             <li class="nav__item">
-                                <a href="about.html" class="nav__link">About</a>
+                                <a href="about.html" class="nav__link ">About</a>
                             </li>
                             <li class="nav__item">
                                 <a href="service.html" class="nav__link">Service</a>
@@ -78,8 +79,8 @@
                     <div class="task__wrapper">
                         <div class="developer__task">
                             <div class="developer__task-inner-left">
-                                <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
-                                <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
+                            <ion-icon class="developer__icon" size="large" name="laptop-outline"></ion-icon>
+                            <h3 class="developer__task-title-left">WEB DEVELOPMENT</h3>
                             </div>
                             <p class="developer__task-caption">
                                 An effective UI/UX is what captures attention and spreads a clear message. 
@@ -89,8 +90,7 @@
                         <!-- task-2 -->
                         <div class="developer__task">
                             <div class="developer__task-inner-left">
-                                <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                                <i class='fas fa-laptop-code'></i>
+                                <ion-icon class="developer__icon" size="large" name="phone-portrait-outline"></ion-icon>
                                 <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
                             </div>
                             <p class="developer__task-caption">
@@ -98,39 +98,8 @@
                                 website, I am a well-established professional to help you with this.
                             </p>
                         </div>
-                        <!-- task-3 -->
-                        <div class="developer__task">
-                            <div class="developer__task-inner-left">
-                                <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
-                                <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
-                            </div>
-                            <p class="developer__task-caption">
-                                If you are looking for a user-friendly app that will attract more mobile users, I can help 
-                                you design and build a platform with the latest and trendiest look and feel.
-                            </p>
-                        </div>
-                        <!-- task-4 -->
-                        <div class="developer__task">
-                            <div class="developer__task-inner-left">
-                                <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 13h6m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                                <h3 class="developer__task-title-left">LOGO & GRAPHIC DESIGN</h3>
-                            </div>
-                            <p class="developer__task-caption">
-                                If you are looking for a user-friendly app that will attract more mobile users, I can help 
-                                you design and build a platform with the latest and trendiest look and feel.
-                            </p>
-                        </div>
-                         <!-- task-4 -->
-                         <div class="developer__task">
-                            <div class="developer__task-inner-left">
-                                <svg class="developer__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
-                                <h3 class="developer__task-title-left">UI/UX DESIGN</h3>
-                            </div>
-                            <p class="developer__task-caption">
-                                If you are looking for a user-friendly app that will attract more mobile users, I can help 
-                                you design and build a platform with the latest and trendiest look and feel.
-                            </p>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </section>
@@ -191,5 +160,11 @@
         </div>
     </footer>
     <!-- footer -->
+     <!-- ionicons -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/JS/app.js">
+
+    </script>
 </body>
 </html>

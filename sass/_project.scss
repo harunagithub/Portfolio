@@ -72,6 +72,7 @@
 
     }
     .project__boxes {
+
         .project__box{
             padding: 0 14px;
             margin-bottom: 40px;
@@ -91,6 +92,10 @@
             }
 
         }
+
+        &:hover{
+            background-position: bottom;
+        }
     
         .project__box img{
             border-radius: 5px;
@@ -108,4 +113,19 @@
         } 
     }
 
+}
+
+.project{
+    width: 45%;
+    margin: 1px;
+    padding: 0.5;
+    height: 17em;
+    background-position: top;
+    background-size: cover;
+    transition: linear 10s;
+    background-image: url('/images/various.png');
+}
+
+.section:hover{
+    background-position: bottom;    
 }
