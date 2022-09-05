@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 130px;   
+    margin-bottom: 68px;   
     flex-direction: column-reverse; 
     
     @media screen and (min-width: 768px) {
@@ -104,7 +104,7 @@
                 gap: 42px;
             }
             .developer__col-left {
-                margin-top: 18px;
+                margin-top: 76px;
                 width: 100%;
 
                 @media screen and (min-width: 768px) {
@@ -127,7 +127,7 @@
             font-size: 20px;
             font-family: $fontFamliy;
             text-decoration: none;
-            text-transform: uppercase;
+            text-transform: lowercase;
         }
         .developer__call-link{
             font-size: 20px;

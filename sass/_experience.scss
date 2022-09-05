@@ -1,6 +1,12 @@
-.about-page .experiences{
-    margin-top: 510px;
-}
+.experiences{
+    margin-top: 129px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 170px;
+
+    }
+
+
 .experience__wrapper{
     // @media screen and (min-width: 768px) {
     // margin-top: 272px;
@@ -60,4 +66,6 @@
     }
     }
     
+}
+
 }

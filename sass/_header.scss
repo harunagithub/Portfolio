@@ -1,6 +1,6 @@
 .header {
     padding-top: 10px;
-    margin-bottom: 57px;
+    margin-bottom: 85px;
     // background-color: #f6f8fa;
     
     @media screen and (min-width: 768px) {
@@ -23,12 +23,23 @@
 }
     .header__logo span{
         font-size: 23px;
+        color: #fff;
     }
     .header__inner{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        // align-items: center;
+        position: fixed;
+        z-index: 20;
+        background: #3d3357;
+        left: 0;
+        top: 0;
+        padding: 11px 18px;
+
+        // @media screen and (min-width: 768px) {
+        // padding: 11px 18px;
+            
+        // }
 
         .m-icon{
             width: 30px;
@@ -49,6 +60,7 @@
         top: 29px;
         right: 10px;
         cursor: pointer;
+        color: #fff;
     }
     
    

@@ -13,10 +13,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #fff;
+            // background: #fff;
             z-index: 20;
             width: 100%;
             margin-top: 50px;
+
+            right: 0;
+            top: 247px;
+            background: #3d3357;
+            padding: 53px 0;
 
             &.active{
                 display: block;
@@ -29,17 +34,18 @@
         .nav__link{
             text-decoration: none;
             font-family: $fontFamliy;
-            font-size: 17px;
+            font-size: 13px;
             line-height: 70px;
             border-top: 3px solid transparent;
             font-weight: $regular;
             text-transform: uppercase;
             display: block;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            color: #fff;
 
             @media screen and (max-width: 768px) {
-                color: rgb(30, 18, 35);
-                font-size: 18px;
+                color: #fff;
+                font-size: 14px;
             }
 
             &:hover {
@@ -47,8 +53,7 @@
                 border-top-color: $primaryColor;
                 // cursor:pointer;
                 // color: #009BDF;
-
-                
+                font-weight: normal;
             }
 
             &.current-page {

@@ -18,6 +18,8 @@
 }
 .skills-column {
     position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .skills-one {
     display: block;
