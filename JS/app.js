@@ -11,9 +11,6 @@ menu_close.addEventListener('click', () =>{
   mobile__menu.style.display = "none"
   menu__icon.style.display = "block"
   menu_close.style.display = "none"
-
-
-  
   
 })
 

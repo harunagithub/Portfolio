@@ -85,6 +85,21 @@ ul {
   }
 }
 
+.header .header__logo {
+  position: relative;
+  display: block;
+}
+
+.header .header__logo::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 14px;
+  height: 66px;
+  bottom: 0;
+  left: -8px;
+}
+
 .header .header__logo a {
   text-decoration: none;
   font-size: 30px;
@@ -619,12 +634,12 @@ h1 {
 }
 
 .experiences {
-  margin-top: 129px;
+  margin-top: 480px;
 }
 
 @media screen and (min-width: 768px) {
   .experiences {
-    margin-top: 170px;
+    margin-top: 270px;
   }
 }
 
@@ -1334,6 +1349,8 @@ input#email {
 #first {
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .parallax-content {

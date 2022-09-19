@@ -9,9 +9,18 @@
     }
 
     .header__logo {
-    // @media screen and (min-width: 768px) {
-    //     margin-top: 15px;
-    // }
+        position: relative;
+        display: block;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            width: 14px;
+            height: 66px;
+            bottom: 0;
+            left: -8px;
+        }
         a { 
         text-decoration: none;
         font-size: 30px;
