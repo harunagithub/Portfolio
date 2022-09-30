@@ -1,17 +1,12 @@
 .experiences{
-    padding-top: 100px;
+    padding-top: 500px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 100px;
+        padding-top: 260px;
 
     }
 
-
 .experience__wrapper{
-    // @media screen and (min-width: 768px) {
-    // margin-top: 272px;
-        
-    // }
 
     .experience__box{
         padding: 0 0 65px;
@@ -39,8 +34,6 @@
         font-family: $fontFamliy;
         font-weight: bold;
         padding: 0 50px 0 0;
-
-
     }
     .experience__company{
         font-size: 16px;

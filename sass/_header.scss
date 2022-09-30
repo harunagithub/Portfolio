@@ -1,7 +1,6 @@
 .header {
     padding-top: 10px;
     margin-bottom: 85px;
-    // background-color: #f6f8fa;
     
     @media screen and (min-width: 768px) {
         min-height: 40px;
@@ -15,24 +14,30 @@
         &::before{
             content: "";
             position: absolute;
-            background-color: #fff;
+            background-color: #009BDF;
             width: 14px;
             height: 66px;
             bottom: 0;
             left: -8px;
         }
         a { 
-        text-decoration: none;
-        font-size: 30px;
-        font-family: $fontFamliy;
-        font-weight: bold;
-        color: $primaryColor;
-        display: block;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-weight: bold;
+            color: #000;
+            display: block;
     }
 }
+
+.developer__inner-img {
+    position: absolute;
+    z-index: 2;
+  }
+  
     .header__logo span{
         font-size: 23px;
-        color: #fff;
+        color: #009BDF;
     }
     .header__inner{
         display: flex;
@@ -40,11 +45,11 @@
         width: 100%;
         position: fixed;
         z-index: 20;
-        background: #3d3357;
+        background: #f6f8fa;
         left: 0;
         top: 0;
         padding: 11px 18px;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
         // @media screen and (min-width: 768px) {
         // padding: 11px 18px;
@@ -70,7 +75,7 @@
         top: 29px;
         right: 10px;
         cursor: pointer;
-        color: #fff;
+        color: #000;
     }
     
    
