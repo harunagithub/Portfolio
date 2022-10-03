@@ -81,6 +81,7 @@
             </div>
         </div>
     </section>
+
     <section class="todo">
         <div class="container">
            <div class="developer__task-todo-wrapper">
@@ -128,13 +129,48 @@
         </div>
     </section>
 
+    <section class="design">
+        <div class="container">
+          <div class="design__wrapper">
+            <div class="design__column">
+                <ion-icon class="developer__icon" size="large" name="laptop-outline"></ion-icon>
+                <h3 class="developer__task-title-left design__title">WEB DEVELOPMENTS</h3>
+                <p class="developer__task-caption design__text-left">
+                    Do you have a website that needs some new features? Are you looking for someone to take over the research, design, and development of 
+                    your website? If so, I am a well-established professional who can help you with this.
+                </p>
+            </div>
+            <div class="design__column">
+                <img src="./images/para-one.jpg" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="design">
+        <div class="container">
+          <div class="design__wrapper">
+            <div class="design__column">
+                <img src="./images/para-one.jpg" alt="">
+            </div>
+            <div class="design__column column-content-right">
+                <ion-icon class="developer__icon" size="large" name="laptop-outline"></ion-icon>
+                <h3 class="developer__task-title-left design__title">UI/UX DESIGN</h3>
+                <p class="developer__task-caption design__text">
+                    If you are looking for a user-friendly app that will attract more mobile users, I can help 
+                    you design and build a platform with the latest and trendiest look and feel.
+                </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- parallax section -->
     <section>
         <div class="div" id="first" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/para-three.jpg);">
             <!-- <h2>First Section</h2> -->
         </div>
     </section>
-
 
     <!-- skills -->
     <!-- experience -->
@@ -177,9 +213,7 @@
                     <div class="experience__year-title">
                         <span class="year">2021-2022</span>
                     </div>
-                        <!-- <h1 class="experience__title">Experience</h1> -->
-                            <ion-icon class="experience__box-icon w-6 h-6" name="chevron-forward-circle"></ion-icon>
-                    <!-- <svg class="experience__box-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg> -->
+                    <ion-icon class="experience__box-icon w-6 h-6" name="chevron-forward-circle"></ion-icon>
                     <div class="experience__box">
                         <h5 class="experience__company">HMZ CREATIVES</h4>
                         <div>
@@ -207,8 +241,8 @@
                     </a>
                 </div>
                 <div class="project__boxes">
-                    <div class="project__box hvr-grow">
-                        <a class="project__box-inner" target="_blank" href="https://thebaaecompanyltd.com/"><img src="./images/baae-homepage.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="The BAAE Company LTD" data-project-images='["./images/baae-homepage.png", "./images/para-one.jpg", "./images/para-two.jpg"]'>
+                        <div class="project__box-inner"><img src="./images/baae-homepage.png" alt=""></div>
                     </div>
                     <div class="project__box hvr-grow">
                         <a class="project__box-inner" target="_blank" href="https://variouscategories.co.uk/"><img src="./images/variouscategories-homepage.png" alt=""></a>
@@ -271,11 +305,34 @@
     </footer>
     <!-- footer -->
 
+    <!-- portfolio modal -->
+    <div class="modal" style="display: none;">
+        <div class="modal__loader"><span></span></div> 
+        <div class="modal__container">
+            <h2 class="modal__title"></h2>
+            <button class="modal__close-btn">
+                <ion-icon name="close"></ion-icon>
+            </button>
+            <div class="modal__image-wrapper">
+                <img class="modal__image" />
+            </div>
+            <button class="modal__next-btn">
+                <ion-icon name="caret-forward"></ion-icon>
+            </button>
+            <button class="modal__prev-btn">
+                <ion-icon name="caret-back"></ion-icon>
+            </button>
+        </div>
+    </div>
+    <!-- portfolio modal -->
+
+
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- ionicons -->
-    <script src="./JS/app.js">
+    <script src="./js/jquery.js"></script>
+        <script src="./js/app.js">
         
     </script>
 </body>

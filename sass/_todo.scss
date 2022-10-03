@@ -38,6 +38,8 @@
         text-align: left;
         gap: 60px;
         z-index: 1;
+        margin-bottom: 80px;
+
         .developer__task-1 .developere__task-2 .developer__task-3 {
             padding: 20px;
         }
@@ -113,5 +115,29 @@
             // align-items: center;
         }
     }
+
+.design{
+    
+    .design__wrapper {
+
+        @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        }
+
+        .developer__task-caption.design__text-right {
+            @media screen and(min-width: 768px) {
+                width: 80%;
+            }
+          }
+      }
+
+      .design__column img {
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
   
+}
     

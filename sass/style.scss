@@ -14,6 +14,7 @@
 @import '_contact.scss';
 @import '_about.scss';
 @import '_parallax.scss';
+@import './modal';
 
 .container{
     max-width: 1200px;
@@ -21,16 +22,10 @@
     padding: 0 20px;
 }
 
-// .homepage-bg {
-//     background-color: #f6f8fa;
-// }
-
 .menu__icon{
     width: 30px;
     height: 30px;
 }
-
-
     /* Hvr-Float */
     .hvr-float {
         display: inline-block;
@@ -65,3 +60,5 @@
     .hvr-grow:active {
         transform: scale(1.1);
     }
+
+    
