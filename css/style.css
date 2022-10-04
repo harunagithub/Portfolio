@@ -526,25 +526,6 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .design .design__wrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .design .design__wrapper .developer__task-caption.design__text-right {
-    width: 80%;
-  }
-}
-.design .design__column img {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .task__wrapper {
   margin-bottom: 88px;
 }
@@ -568,6 +549,53 @@ h1 {
 }
 .task__wrapper .developer__task-caption {
   color: #758398;
+}
+
+ .design__wrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+   .design__wrapper {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 115px;
+  }
+}
+.design__wrapper .design__column {
+  flex: 1;
+  margin-top: 30px;
+}
+.design__wrapper .design__text {
+  color: #758398;
+}
+@media screen and (min-width: 768px) {
+ .design__wrapper .design__text-right {
+    width: 80%;
+  }
+}
+.design .design__img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .design .design__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.design .second__wrapper {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .design .second__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .skill__wrapper {
@@ -736,16 +764,15 @@ h1 {
 .projects .project__boxes .project__box {
   padding: 0 14px;
   margin-bottom: 40px;
-}
-.projects .project__boxes .project__box .project__box-inner {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
 }
 .projects .project__boxes .project__box .project__box-inner:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   display: block;
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.4s linear;
+  transition: 0.93s;
 }
 .projects .project__boxes .project__box img {
   border-radius: 5px;
@@ -753,14 +780,10 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .projects .project__boxes {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    display: flex;
     width: 100%;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .projects .project__boxes {
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 15px;
+    width: 100%;
   }
 }
 
@@ -1288,11 +1311,15 @@ input#email {
     width: 70%;
   }
 }
+.design {
+  padding-bottom: 60px;
+}
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   height: 100%;
   z-index: 9999;
@@ -1325,17 +1352,29 @@ input#email {
 }
 .modal .modal__next-btn {
   position: absolute;
-  bottom: 50%;
-  right: 22px;
+  right: 0;
   font-size: 25px;
   cursor: pointer;
+  bottom: 50%;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .modal .modal__next-btn {
+    bottom: 50%;
+  }
 }
 .modal .modal__prev-btn {
   position: absolute;
-  bottom: 50%;
-  left: 22px;
+  left: 0;
   font-size: 25px;
   cursor: pointer;
+  bottom: 50%;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .modal .modal__prev-btn {
+    bottom: 50%;
+  }
 }
 .modal button {
   background: none;

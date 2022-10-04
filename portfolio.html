@@ -62,32 +62,33 @@
             </div>
         </section>
 
-            <!-- projects or work -->
+         <!-- projects or work -->
     <section class="projects">
         <div class="container">
             <div class="project__wrapper">
                 <div class="project__title-box">
                     <h2 class="project__title">UI/UX Design</h2>
-                    <!-- <svg class="developer__icon-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg> -->
                 </div>
                 <div class="project__boxes">
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://thebaaecompanyltd.com/"><img src="./images/simpleselfdrive-ourfleet.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="The BAAE Company LTD" data-project-images='["./images/TheBaaeltd-2.png", "./images/TheBaaeltd-3.png", "./images/TheBaaeltd-4.png", "./images/TheBaaeltd-4.png", "./images/TheBaaeltd-4.png"]'>
+                        <div class="project__box-inner"><img src="./images/TheBaaeltd-1.png" alt=""></div>
                     </div>
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://variouscategories.co.uk/"><img src="./images/baae-homepage.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="Various Categories" data-project-images='["./images/variouscategories-1.png", "./images/variouscategories-2.png", "./images/variouscategories-3.png", "./images/variouscategories-4.png", "./images/variouscategories-3.png"]' >
+                        <div class="project__box-inner"><img src="./images/variouscategories-1.png" alt=""></div>
                     </div>
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://thebaaecompanyltd.com/"><img src="./images/simpleselfdrive-homepage.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="The Salon" data-project-images='["./images/salon-2.png", "./images/salon-3.png", "./images/salon-4.png", "./images/salon-5.png"]'>
+                        <div class="project__box-inner"><img src="./images/salon-1.png" alt=""></div>
                     </div>
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://thebaaecompanyltd.com/"><img src="./images/baae-servicepage.png" alt=""></a>
+                </div>
+                <div class="project__boxes">
+                    <div class="project__box hvr-grow" data-project-title="The BAAE Company LTD" data-project-images='["./images/TheBaaeltd-2.png", "./images/TheBaaeltd-3.png", "./images/TheBaaeltd-4.png", "./images/TheBaaeltd-4.png", "./images/TheBaaeltd-4.png"]'>
+                        <div class="project__box-inner"><img src="./images/TheBaaeltd-1.png" alt=""></div>
                     </div>
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://variouscategories.co.uk/"><img src="./images/variouscategories-homepage.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="Various Categories" data-project-images='["./images/variouscategories-1.png", "./images/variouscategories-2.png", "./images/variouscategories-3.png", "./images/variouscategories-4.png", "./images/variouscategories-3.png"]' >
+                        <div class="project__box-inner"><img src="./images/variouscategories-1.png" alt=""></div>
                     </div>
-                    <div class="project__box">
-                        <a class="project__box-inner hvr-grow" target="_blank" href="https://thebaaecompanyltd.com/"><img src="./images/baae-projectpage.png" alt=""></a>
+                    <div class="project__box hvr-grow" data-project-title="The Salon" data-project-images='["./images/salon-2.png", "./images/salon-3.png", "./images/salon-4.png", "./images/salon-5.png"]'>
+                        <div class="project__box-inner"><img src="./images/salon-1.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -153,12 +154,35 @@
         </div>
     </footer>
     <!-- footer -->
-    <script src="./js/app.js">
-        
-    </script>
+
+    
+    <!-- portfolio modal -->
+    <div class="modal" style="display: none;">
+        <div class="modal__loader"><span></span></div> 
+        <div class="modal__container">
+            <h2 class="modal__title"></h2>
+            <button class="modal__close-btn">
+                <ion-icon name="close"></ion-icon>
+            </button>
+            <div class="modal__image-wrapper">
+                <img class="modal__image" />
+            </div>
+            <button class="modal__next-btn">
+                <ion-icon name="caret-forward"></ion-icon>
+            </button>
+            <button class="modal__prev-btn">
+                <ion-icon name="caret-back"></ion-icon>
+            </button>
+        </div>
+    </div>
+    <!-- portfolio modal -->
 
      <!-- ionicons -->
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src="./js/jquery.js"></script>
+     <script src="./js/app.js">
+        
+    </script>
 </body>
 </html>

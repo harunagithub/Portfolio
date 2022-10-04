@@ -20,7 +20,61 @@
      } 
      .developer__task-caption{
         color: $secondaryColor;
-
      }
 
 }
+
+.design{
+    padding-top: 60px;
+    
+    .design__wrapper {
+        text-align: center;
+        padding-bottom: 50px;
+
+
+        @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 115px;
+        }
+
+        .design__column{
+            flex: 1;
+            margin-top: 30px;
+        }
+        
+        .design__text{
+            color: $secondaryColor;
+
+        }
+
+        .design__text-right {
+            @media screen and(min-width: 768px) {
+                width: 80%;
+            }
+          }
+      }
+
+      .design__img {
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+
+        @media screen and (min-width: 768px) {
+        width: 300px;
+        height: 300px;
+        }
+      }
+
+      .second__wrapper {
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+      }
+  
+}
+   
