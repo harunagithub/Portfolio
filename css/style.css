@@ -232,7 +232,7 @@ ul {
 .developers {
   background-color: #f6f8fa;
   z-index: 1;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   padding-top: 63px;
   margin-top: -58px;
 }
@@ -551,27 +551,29 @@ h1 {
   color: #758398;
 }
 
- .design__wrapper {
+.design {
+  padding-top: 60px;
+}
+.design .design__wrapper {
   text-align: center;
-  padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
-   .design__wrapper {
+  .design .design__wrapper {
     display: flex;
     align-items: center;
     text-align: left;
     gap: 115px;
   }
 }
-.design__wrapper .design__column {
+.design .design__wrapper .design__column {
   flex: 1;
   margin-top: 30px;
 }
-.design__wrapper .design__text {
+.design .design__wrapper .design__text {
   color: #758398;
 }
 @media screen and (min-width: 768px) {
- .design__wrapper .design__text-right {
+  .design .design__wrapper .design__text-right {
     width: 80%;
   }
 }
@@ -1311,10 +1313,6 @@ input#email {
     width: 70%;
   }
 }
-.design {
-  padding-bottom: 60px;
-}
-
 .modal {
   position: fixed;
   top: 0;
