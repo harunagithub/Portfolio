@@ -162,7 +162,7 @@ ul {
     margin-top: 50px;
     right: 0;
     top: 247px;
-    background: #009BDF;
+    background: #F4F7F9;
     padding: 53px 0;
   }
   .nav .nav__list.active {
@@ -187,7 +187,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .nav .nav__item .nav__link {
-    color: #fff;
+    color: #000;
     font-size: 14px;
   }
 }

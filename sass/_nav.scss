@@ -18,7 +18,7 @@
             margin-top: 50px;
             right: 0;
             top: 247px;
-            background: #009BDF;;
+            background: #F4F7F9;
             padding: 53px 0;
 
             &.active{
@@ -43,7 +43,7 @@
             letter-spacing: 1px;
 
             @media screen and (max-width: 768px) {
-                color: #fff;
+                color: #000;
                 font-size: 14px;
             }
 
@@ -77,3 +77,4 @@
 .header__close{
     display: none;
 }
+
