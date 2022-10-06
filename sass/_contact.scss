@@ -143,11 +143,11 @@
         width: 100%;
         margin-left: 0;
     }
-
 }
 input, textarea {
     background: #caffff;
     border-radius: 3px;
+    border-bottom: 1px solid grey;
 
     &:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -155,11 +155,13 @@ input, textarea {
     }
 }
 input:hover {
-    border: 1px solid red;
+    // border: 1px solid red;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: 0.93s;
 }
 input#email {
     width: 100%;
+    border-bottom: 3px solid grey;
+
 }

@@ -102,6 +102,11 @@ ul {
   color: #000;
   display: block;
 }
+.header .header__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .header .developer__inner-img {
   position: absolute;
   z-index: 2;
@@ -556,6 +561,7 @@ h1 {
 }
 .design .design__wrapper {
   text-align: center;
+  margin-bottom: 75px;
 }
 @media screen and (min-width: 768px) {
   .design .design__wrapper {
@@ -1097,6 +1103,7 @@ h1 {
 input, textarea {
   background: #caffff;
   border-radius: 3px;
+  border-bottom: 1px solid grey;
 }
 input:hover, textarea:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -1104,7 +1111,6 @@ input:hover, textarea:hover {
 }
 
 input:hover {
-  border: 1px solid red;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transition: 0.93s;
@@ -1112,6 +1118,7 @@ input:hover {
 
 input#email {
   width: 100%;
+  border-bottom: 3px solid grey;
 }
 
 .about-page .abouts {
