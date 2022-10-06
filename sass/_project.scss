@@ -3,8 +3,7 @@
 
     .project__wrapper {
         transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-        padding: 18px 0 150px;
-        // padding: 100px 0 150px;
+        // padding: 18px 0 150px;
 
         @media screen and (max-width: 768px) {
         padding: 65px 15px 15px;
@@ -17,7 +16,6 @@
         align-items: center;
         gap: 28px;
         margin-bottom: 20px;
-        // padding: 0 27px;
 
         @media screen and (min-width: 768px) {
             display: flex;
@@ -59,7 +57,6 @@
     .project__boxes {
 
         .project__box{
-            padding: 0 14px;
             margin-bottom: 40px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             cursor: pointer;
@@ -86,8 +83,7 @@
         }
         @media screen and (min-width: 768px) {
             display: flex;
-            width: 100%;
-            gap: 15px;
+            gap: 30px;
             width: 100%;
         }
     }

@@ -42,8 +42,8 @@
       }
 
       .form-icon {
-        background: #caffff;
-        color: #000;
+        background: #009bdf;
+        color: #fff;
         padding: 10px;
         border-radius: 100%;
       }
@@ -111,6 +111,7 @@
     font-size: 14px;
     letter-spacing: 2px;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 @media (min-width: 768px) {
@@ -145,9 +146,8 @@
     }
 }
 input, textarea {
-    background: #caffff;
+    background: #d7d7d7;
     border-radius: 3px;
-    border-bottom: 1px solid grey;
 
     &:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -162,6 +162,6 @@ input:hover {
 }
 input#email {
     width: 100%;
-    border-bottom: 3px solid grey;
+
 
 }

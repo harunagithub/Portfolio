@@ -40,7 +40,7 @@
     }
 
     @media screen and (min-width: 1366px) {
-        padding-bottom: 170px;
+        padding-bottom: 90px;
     }
 
     }
@@ -73,7 +73,6 @@
         
         @media screen and (min-width: 768px) {
         max-width: 400px;
-        margin-bottom: 30px;
 
         }
 
@@ -141,10 +140,6 @@
                 margin-top: 76px;
                 width: 100%;
 
-                @media screen and (min-width: 768px) {
-                margin-bottom: 294px;
-                    
-                }
             }
         .developer__email-item {
             display: flex;

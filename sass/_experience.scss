@@ -1,5 +1,4 @@
 .experiences{
-    padding-top: 35px;
 
     @media screen and (min-width: 768px) {
         padding-top: 50px;
@@ -20,12 +19,12 @@
         color: #000000;
         font-size: 35px;
         font-weight: 800;
-        line-height: 111px;
         font-family: $fontFamliy2;
+        line-height: 1.8;
+        margin-bottom: 40px;
     }
     .experience__box-icon {
         width: 20px;
-    
     }
     
     .year{
@@ -33,12 +32,13 @@
         color: #000000;
         font-family: $fontFamliy;
         font-weight: bold;
-        padding: 0 50px 0 0;
+        margin-bottom: 10px;
     }
     .experience__company{
         font-size: 16px;
         color: $secondaryColor;
         font-family: $fontFamliy;
+        line-height: 1.4;
         padding: 0 50px 30px 0;
     }
     .experience__text{
@@ -74,3 +74,12 @@
 }
 
 }
+
+.column {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        // align-items: center;
+    }
+  }
