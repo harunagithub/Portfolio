@@ -133,9 +133,9 @@ ul {
 }
 .header .menu__icon {
   width: 30px;
-  height: 29px;
+  height: 50p;
   position: absolute;
-  top: 29px;
+  top: 27px;
   right: 10px;
   cursor: pointer;
   color: #000;
@@ -775,7 +775,7 @@ h1 {
   display: block;
   overflow: hidden;
   border-radius: 10px;
-  transition: 0.93s;
+  transition: all 9s;
 }
 .projects .project__boxes .project__box img {
   border-radius: 5px;
