@@ -121,6 +121,7 @@ ul {
   top: 0;
   padding: 11px 18px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  align-items: center;
 }
 .header .header__inner .m-icon {
   width: 30px;
@@ -139,6 +140,16 @@ ul {
   right: 10px;
   cursor: pointer;
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .header .github {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .github {
+    display: block;
+  }
 }
 
 .nav {
@@ -636,11 +647,11 @@ h1 {
 }
 
 .experiences {
-  padding-top: 470px;
+  padding-top: 100px;
 }
 @media screen and (min-width: 768px) {
   .experiences {
-    padding-top: 265px;
+    padding-top: 100px;
   }
 }
 .experiences .experience__wrapper .experience__box {

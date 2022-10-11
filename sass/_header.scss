@@ -30,7 +30,6 @@
     }
 }
 
-
 .developer__inner-img {
     position: absolute;
     z-index: 2;
@@ -51,6 +50,7 @@
         top: 0;
         padding: 11px 18px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        align-items: center;
 
         .m-icon{
             width: 30px;
@@ -72,6 +72,17 @@
         right: 10px;
         cursor: pointer;
         color: #000;
+    }
+
+
+    .github {
+
+        @media screen and (max-width: 768px) {
+        display: none;
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+            }
     }
     
    
