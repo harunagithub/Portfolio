@@ -60,7 +60,7 @@
     width: 91%;
   }
   .award__description-1 {
-    font-size: 14px;
+    font-size: 17px;
     color: #000000;
     font-family: $fontFamliy;
     font-weight: 400;
@@ -71,7 +71,7 @@
     }
   }
   .award__description-2 {
-    font-size: 14px;
+    font-size: 17px;
     color: $secondaryColor;
     font-family: $fontFamliy;
     font-weight: 400;
@@ -79,5 +79,13 @@
     @media screen and (min-width: 768px) {
       font-size: 17px;
     }
+  }
+}
+
+.column-wrapper {
+
+  @media screen and (min-width: 1024px) {
+  display: flex;
+    
   }
 }

@@ -635,9 +635,12 @@ h1 {
   border-radius: 23px;
 }
 
+.experiences {
+  padding-top: 470px;
+}
 @media screen and (min-width: 768px) {
   .experiences {
-    padding-top: 50px;
+    padding-top: 265px;
   }
 }
 .experiences .experience__wrapper .experience__box {
@@ -1177,7 +1180,7 @@ input#email {
   width: 91%;
 }
 .about-page .award__description-1 {
-  font-size: 14px;
+  font-size: 17px;
   color: #000000;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 400;
@@ -1189,7 +1192,7 @@ input#email {
   }
 }
 .about-page .award__description-2 {
-  font-size: 14px;
+  font-size: 17px;
   color: #758398;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 400;
@@ -1197,6 +1200,12 @@ input#email {
 @media screen and (min-width: 768px) {
   .about-page .award__description-2 {
     font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column-wrapper {
+    display: flex;
   }
 }
 
@@ -1237,7 +1246,7 @@ input#email {
 
 .parallax-content {
   position: relative;
-  padding: 150px 0 20px;
+  padding: 80px 0;
 }
 @media screen and (min-width: 768px) {
   .parallax-content {
