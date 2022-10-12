@@ -646,9 +646,6 @@ h1 {
   border-radius: 23px;
 }
 
-.experiences {
-  padding-top: 200px;
-}
 @media screen and (min-width: 768px) {
   .experiences {
     padding-top: 150px;
@@ -1223,6 +1220,15 @@ input#email {
 .div {
   width: 100%;
   min-height: 50vh;
+}
+
+.parallax-section {
+  padding-bottom: 350px;
+}
+@media screen and (min-width: 768px) {
+  .parallax-section {
+    padding-bottom: 225px;
+  }
 }
 
 .parallax__text-title {

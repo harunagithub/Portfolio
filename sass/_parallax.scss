@@ -3,6 +3,15 @@
     width: 100%;
     min-height: 50vh;
   }
+
+  .parallax-section{
+    padding-bottom: 350px;
+
+    @media screen and (min-width: 768px) {
+    padding-bottom: 225px;
+      
+    }
+  }
   .parallax__text-title{
     font-size: 35px;
     font-family: $fontFamliy2;
@@ -31,19 +40,6 @@
     background-position: center;
   background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
   }
-  
-  // #second {
-  //   background: #ffe5ec;
-  // }
-  
-  // #third {
-  //   background-size: cover;
-  //   background-attachment: fixed;
-  // }
-  
-  // #fourth {
-  //   background: #b48648;
-  // }
 
   .parallax-content{
     position: relative;
