@@ -12,7 +12,6 @@
   .developers {
   background-color: #f6f8fa;
   z-index: 1;
-  padding-bottom: 50px;
   padding-top: 63px;
   margin-top: -58px;
   }
@@ -23,7 +22,6 @@
     justify-content: space-between;
     position: relative;
     flex-direction: column-reverse; 
-    padding-bottom: 57px;
 
     
     @media screen and (min-width: 768px) {
@@ -65,21 +63,18 @@
     }
     
     .developer__img {
-        border-radius: 100%;
         width: 100%;
-        height: auto;
         object-fit: cover;
         margin-top: 37px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        margin-bottom: 50px;
         
         @media screen and (min-width: 768px) {
         max-width: 400px;
 
         }
-
-        @media screen and (min-width: 1024px) {
-            max-width: 550px;
-    
-            }
         
         @media screen and (min-width: 1366px) {
             max-width: 650px;
@@ -137,7 +132,6 @@
                 gap: 42px;
             }
             .developer__col-left {
-                margin-top: 76px;
                 width: 100%;
 
             }

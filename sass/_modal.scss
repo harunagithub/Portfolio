@@ -14,16 +14,6 @@
     margin: 0 auto;
   }
 
-//   added 
-//   .modal__image-wrapper {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 55%;
-//   }
-//   added 
-
   .modal__image {
     width: 100%;
     object-fit: cover;
@@ -40,7 +30,7 @@
 
   .modal__close-btn {
     position: absolute;
-    right: 20px;
+    right: 5px;
     font-size: 27px;
     top: 10px;
     cursor: pointer;

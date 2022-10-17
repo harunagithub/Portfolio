@@ -1,16 +1,14 @@
 .site__footer{
-        /* position: absolute; */
         bottom: 0;
         left: 0;
         right: 0;
-        // background: $;
         height: auto;
         width: 100vw;
         padding-top: 40px;
         color: #fff;
+        padding-top: 100px;
 }
 .site__primary-footer{
-        padding-top: 75px;
         padding-bottom: 50px;
 
         @media screen and (min-width: 700px) {
@@ -23,7 +21,6 @@
         .site__footer__inner-wrap{
 
             .site__footer-title-wrapper{
-                // text-align: center;
                 .widget__title{
                     font-size: 22px;
                     font-family: $fontFamliy2;
@@ -56,6 +53,11 @@
         }
         .site__menu-container{
             text-align: center;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                gap: 60px;
+            }
 
             @media screen and (min-width: 800px) {
                 display: flex;
