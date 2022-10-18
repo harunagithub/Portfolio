@@ -1,6 +1,10 @@
 .todo {
     padding-top: 20px;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 70px;
+    }
+
     .developer__task-inner-left {
         padding: 35px 0;
 
@@ -38,7 +42,6 @@
         text-align: left;
         gap: 60px;
         z-index: 1;
-        margin-bottom: 80px;
 
         .developer__task-1 .developere__task-2 .developer__task-3 {
             padding: 20px;

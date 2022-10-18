@@ -55,9 +55,25 @@
         }
     }
 
-    .latest-work {
-        padding: 150px 0 140px;
+}
+
+.services {
+    padding: 20px 0;
+
+    @media screen and (min-width: 768px)  {
+    padding: 45px 0 50px 0;
     }
 
+}    
+
+.project-page .services {
+    padding-top: 0;
+}
+
+.about-page .services {
+    padding-top: 10px;
     
+    @media screen and (min-width: 768px)  {
+        padding-bottom: 50px;
+    }
 }
