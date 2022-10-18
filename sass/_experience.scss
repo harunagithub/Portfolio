@@ -83,3 +83,9 @@
         display: flex;
     }
   }
+
+  .about-page .experiences {
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+    }
+  }

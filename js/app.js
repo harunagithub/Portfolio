@@ -18,11 +18,13 @@
       $("#mainListDiv").fadeIn();
     });
 
-    const parallax = document.getElementById("first");
-    window.addEventListener("scroll", function () {
-      let offset = window.pageYOffset;
-      parallax.style.backgroundPositionY = offset * 0.7 + "px";
-    });
+    // const parallax = document.getElementById("first");
+    // if (parallax !== null) {
+    //   window.addEventListener("scroll", function () {
+    //     let offset = window.pageYOffset;
+    //     parallax.style.backgroundPositionY = offset * 0.7 + "px";
+    //   });
+    // }
     // NAVBAR MENU FOR MENU
 
     // FORM VALIADTION FOR FORMSPREE
@@ -96,6 +98,7 @@
 
     modal__close.addEventListener("click", () => {
       modal__image.src = "";
+      document.querySelector('body').classList.remove('no-scroll');
       modal.style.display = "none";
     });
 
