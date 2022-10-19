@@ -116,7 +116,7 @@ ul {
 }
 .header .header__inner .m-icon {
   width: 30px;
-  height: 30px;
+  height: 31px;
 }
 @media screen and (min-width: 768px) {
   .header .header__mobile {
@@ -127,7 +127,7 @@ ul {
   width: 30px;
   height: 50p;
   position: absolute;
-  top: 27px;
+  top: 15px;
   right: 10px;
   cursor: pointer;
   color: #000;
@@ -163,9 +163,9 @@ ul {
     width: 100%;
     margin-top: 50px;
     right: 0;
-    top: 247px;
+    top: 356px;
     background: #F4F7F9;
-    padding: 53px 0;
+    height: 100vh;
   }
   .nav .nav__list.active {
     display: block;
@@ -195,7 +195,6 @@ ul {
 }
 .nav .nav__item .nav__link.current-page, .nav .nav__item .nav__link:hover {
   color: #009BDF;
-  border-top-color: #009BDF;
   font-weight: normal;
   transition: all 0.93s;
 }
@@ -232,6 +231,7 @@ ul {
   background-color: #f6f8fa;
   z-index: 1;
   padding-top: 63px;
+  padding-bottom: 100px;
   margin-top: -58px;
 }
 
@@ -786,6 +786,7 @@ h1 {
   margin-bottom: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
+  width: 100%;
 }
 .projects .project__boxes .project__box .project__box-inner:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;

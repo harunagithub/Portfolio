@@ -17,9 +17,10 @@
             width: 100%;
             margin-top: 50px;
             right: 0;
-            top: 247px;
+            top: 356px;
             background: #F4F7F9;
-            padding: 53px 0;
+            // padding: 53px 0;
+            height: 100vh;
 
             &.active{
                 display: block;
@@ -50,7 +51,7 @@
             &.current-page,
             &:hover {
                 color: $primaryColor;
-                border-top-color: $primaryColor;
+                // border-top-color: $primaryColor;
                 font-weight: normal;
                 transition: all 0.93s;
 
