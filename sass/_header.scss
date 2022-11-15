@@ -1,10 +1,30 @@
 .header {
     padding-top: 10px;
     margin-bottom: 85px;
+    background-color: #009BDF;
+    height: 65px;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
     @media screen and (min-width: 768px) {
         min-height: 40px;
         padding-top: 0;
+        height: 95px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+       @media screen and (min-width: 1024px) {
+        height: 65px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+     @media screen and (min-width: 1200px) {
+        height: 92px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
     .header__logo {
