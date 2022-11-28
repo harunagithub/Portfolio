@@ -1,9 +1,16 @@
 .header {
     padding-top: 10px;
     margin-bottom: 85px;
-    background-color: #009BDF;
+    position: fixed;
+        z-index: 20;
+        background: #0a192f;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: 0 20px 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        align-items: center;
     height: 65px;
-    position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     
@@ -36,7 +43,7 @@
             font-size: 30px;
             font-family: "Barlow Semi Condensed", sans-serif;
             font-weight: bold;
-            color: #009BDF;
+            color: #64ffda;
             display: block;
     }
 }
@@ -46,22 +53,28 @@
     z-index: 2;
   }
   
-    .header__logo span{
+    .header__logo{
+        span{
         font-size: 23px;
-        color: #333;
+        color: #64ffda;
+        // display: none;
+        }
+
+        
     }
     .header__inner{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        position: fixed;
-        z-index: 20;
-        background: #f6f8fa;
-        left: 0;
-        top: 0;
-        padding: 0 20px 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         align-items: center;
+        // position: fixed;
+        // z-index: 20;
+        // background: #0a192f;
+        // left: 0;
+        // top: 0;
+        // padding: 0 20px 10px;
+        // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        // align-items: center;
 
         .m-icon{
             width: 30px;

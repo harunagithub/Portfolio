@@ -15,12 +15,15 @@
     color: $secondaryColor;
     font-family: $fontFamliy;
     font-size: 17px;
-
 }
+
 .skills-column {
     position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
+}
+ion-icon{
+    color: #758398;
 }
 .skills-one {
     display: block;

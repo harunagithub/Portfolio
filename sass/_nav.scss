@@ -28,8 +28,16 @@
         }
     }
 
+    .numbers{
+        color: rgb(88, 155, 88);
+    }
+
     .nav__item{
             margin-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
         .nav__link{
             text-decoration: none;
             font-family: $fontFamliy;
@@ -40,7 +48,7 @@
             text-transform: uppercase;
             display: block;
             transition: all 0.5s ease-in-out;
-            color: #000;
+            color: #758398;
             letter-spacing: 1px;
 
             @media screen and (max-width: 768px) {

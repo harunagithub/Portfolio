@@ -14,7 +14,7 @@
       font-size: 28px;
       font-family: "Playfair Display", serif;
       font-weight: 600;
-      color: #000000;
+      color: #ccd6f6;
       line-height: 1.1;
       margin-bottom: 48px;
       width: 100%;
@@ -46,7 +46,7 @@
           font-size: 20px;
           font-family: $fontFamliy2;
           font-weight: 800;
-          color: $primaryColor;
+          color: #ccd6f6;
           line-height: 1.2;
 
           @media screen and (min-width: 768px) {
@@ -61,7 +61,7 @@
   }
   .award__description-1 {
     font-size: 17px;
-    color: #000000;
+    color: #fff;;
     font-family: $fontFamliy;
     font-weight: 400;
     margin-bottom: 20px;
