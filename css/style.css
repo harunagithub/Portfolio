@@ -1112,6 +1112,7 @@ ion-icon {
   font-size: 14px;
   width: 100%;
   margin-bottom: 20px;
+  color: black;
 }
 
 .form .form-details textarea {
