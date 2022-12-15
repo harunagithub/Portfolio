@@ -1112,12 +1112,10 @@ ion-icon {
   font-size: 14px;
   width: 100%;
   margin-bottom: 20px;
-  color: black;
 }
 
 .form .form-details textarea {
   padding: 15px 20px;
-  color: var(--black);
   outline: none;
   border: 1px solid var(--grey);
   font-size: 14px;
@@ -1171,6 +1169,7 @@ ion-icon {
 input, textarea {
   background: #d7d7d7;
   border-radius: 3px;
+  color: black;
 }
 input:hover, textarea:hover {
   transition: 0.93s;
@@ -1380,6 +1379,7 @@ input#email {
           animation: animateProgress 0.5s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  color: #758398;
 }
 .progress p {
   color: inherit;
