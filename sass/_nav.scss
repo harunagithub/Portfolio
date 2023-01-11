@@ -38,6 +38,7 @@
             align-items: center;
             gap: 8px;
 
+
         .nav__link{
             text-decoration: none;
             font-family: $fontFamliy;
@@ -84,3 +85,17 @@
     display: none;
 }
 
+
+  @keyframes nav__link {
+    0% { box-shadow: 0 0 0 0 rgba(0,0,0,0.5); }
+  }
+  .nav__link:hover, 
+  .nav__link:focus {
+    animation: nav__link 1s;
+    box-shadow: 0 0 0 2em transparent;
+  }
+  
+  @keyframes nav__link {
+    0% { box-shadow: 0 0 0 0 rgba(0,0,0,0.5); }
+  }
+  
