@@ -92,7 +92,6 @@ ul {
   .header {
     min-height: 40px;
     padding-top: 0;
-    height: 95px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -186,7 +185,7 @@ ul {
     width: 100%;
     margin-top: 50px;
     right: 0;
-    top: 356px;
+    top: 260px;
     background: #F4F7F9;
     height: 100vh;
   }
@@ -246,12 +245,6 @@ ul {
   display: none;
 }
 
-@-webkit-keyframes nav__link {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-  }
-}
-
 @keyframes nav__link {
   0% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
@@ -259,8 +252,7 @@ ul {
 }
 .nav__link:hover,
 .nav__link:focus {
-  -webkit-animation: nav__link 1s;
-          animation: nav__link 1s;
+  animation: nav__link 1s;
   box-shadow: 0 0 0 2em transparent;
 }
 
@@ -1168,8 +1160,8 @@ ion-icon {
     margin-left: 0;
   }
   .form .form-details input[type=text],
-.form .form-details input[type=email],
-.form .form-details textarea {
+  .form .form-details input[type=email],
+  .form .form-details textarea {
     width: 100%;
     margin-left: 0;
   }
@@ -1183,8 +1175,8 @@ ion-icon {
     margin-left: 0;
   }
   .form .form-details input[type=text],
-.form .form-details input[type=email],
-.form .form-details textarea {
+  .form .form-details input[type=email],
+  .form .form-details textarea {
     width: 100%;
     margin-left: 0;
   }
@@ -1398,23 +1390,12 @@ input#email {
   justify-content: flex-end;
   align-items: center;
   padding-right: 12px;
-  -webkit-animation: animateProgress 0.5s ease;
-          animation: animateProgress 0.5s ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: animateProgress 0.5s ease;
+  animation-fill-mode: forwards;
   color: #758398;
 }
 .progress p {
   color: inherit;
-}
-
-@-webkit-keyframes animateProgress {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
-  }
 }
 
 @keyframes animateProgress {
@@ -1507,21 +1488,11 @@ input#email {
   border-radius: 50%;
   width: inherit;
   height: inherit;
-  -webkit-animation: spin 0.3s linear infinite;
-          animation: spin 0.3s linear infinite;
+  animation: spin 0.3s linear infinite;
   display: block;
 }
 .modal--loading .modal__loader {
   display: block;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spin {

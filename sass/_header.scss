@@ -1,7 +1,7 @@
 .header {
-    padding-top: 10px;
-    margin-bottom: 85px;
-    position: fixed;
+        padding-top: 10px;
+        margin-bottom: 85px;
+        position: fixed;
         z-index: 20;
         background: #0a192f;
         left: 0;
@@ -10,14 +10,14 @@
         padding: 0 20px 10px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         align-items: center;
-    height: 65px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+        height: 65px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     
     @media screen and (min-width: 768px) {
         min-height: 40px;
         padding-top: 0;
-        height: 95px;
+        // height: 95px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
