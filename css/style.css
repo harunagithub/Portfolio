@@ -178,7 +178,7 @@ ul {
   .nav .nav__list {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 243px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 20;
@@ -186,7 +186,6 @@ ul {
     margin-top: 281px;
     right: 0;
     background: #F4F7F9;
-    height: 100vh;
   }
   .nav .nav__list.active {
     display: block;

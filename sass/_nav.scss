@@ -10,7 +10,7 @@
         @media screen and (max-width: 768px) {
             display: none;
             position: absolute;
-            top: 50%;
+            top: 243px;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 20;
@@ -20,7 +20,7 @@
             // top: 260px;
             background: #F4F7F9;
             // padding: 53px 0;
-            height: 100vh;
+            // height: 100vh;
 
             &.active{
                 display: block;
