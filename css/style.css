@@ -1152,6 +1152,12 @@ ion-icon {
   border-radius: 50px;
 }
 
+.form .form-details input[type=text],
+.form .form-details input[type=email],
+.form .form-details textarea {
+  color: black;
+}
+
 @media (min-width: 768px) {
   .form {
     display: flex;
